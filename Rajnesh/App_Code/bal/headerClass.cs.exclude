@@ -1,0 +1,303 @@
+﻿using yo_lib;
+
+/// <summary>
+/// Summary description for ArticleClass
+/// </summary>
+public class headerClass
+{
+    #region "Properties"
+
+    private int _iID = 0;
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public int iID
+    {
+        get
+        {
+            return _iID;
+        }
+        set
+        {
+            _iID = value;
+        }
+    }
+
+    private string _strFilename = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strFilename
+    {
+        get
+        {
+            return _strFilename;
+        }
+        set
+        {
+            _strFilename = value;
+        }
+    }
+
+
+    private string _strH1 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strH1
+    {
+        get
+        {
+            return _strH1;
+        }
+        set
+        {
+            _strH1 = value;
+        }
+    }
+
+    private string _strH2 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strH2
+    {
+        get
+        {
+            return _strH2;
+        }
+        set
+        {
+            _strH2 = value;
+        }
+    }
+
+    
+    private string _strH4 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strH4
+    {
+        get
+        {
+            return _strH4;
+        }
+        set
+        {
+            _strH4 = value;
+        }
+    }
+
+
+    private string _strTitle1 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strTitle1
+    {
+        get
+        {
+            return _strTitle1;
+        }
+        set
+        {
+            _strTitle1 = value;
+        }
+    }
+
+    private string _strTitle2 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strTitle2
+    {
+        get
+        {
+            return _strTitle2;
+        }
+        set
+        {
+            _strTitle2 = value;
+        }
+    }
+
+
+    private string _strTitle3 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strTitle3
+    {
+        get
+        {
+            return _strTitle3;
+        }
+        set
+        {
+            _strTitle3 = value;
+        }
+    }
+
+    private string _strTitle4 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strTitle4
+    {
+        get
+        {
+            return _strTitle4;
+        }
+        set
+        {
+            _strTitle4 = value;
+        }
+    }
+
+    private string _strLink1 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strLink1
+    {
+        get
+        {
+            return _strLink1;
+        }
+        set
+        {
+            _strLink1 = value;
+        }
+    }
+
+    private string _strLink2 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strLink2
+    {
+        get
+        {
+            return _strLink2;
+        }
+        set
+        {
+            _strLink2 = value;
+        }
+    }
+
+    private string _strLink3 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strLink3
+    {
+        get
+        {
+            return _strLink3;
+        }
+        set
+        {
+            _strLink3 = value;
+        }
+    }
+
+    private string _strLink4 = "";
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public string strLink4
+    {
+        get
+        {
+            return _strLink4;
+        }
+        set
+        {
+            _strLink4 = value;
+        }
+    }
+
+
+    private bool _bIsTitle1Link = false;
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public bool bIsTitle1Link
+    {
+        get
+        {
+            return _bIsTitle1Link;
+        }
+        set
+        {
+            _bIsTitle1Link = value;
+        }
+    }
+
+
+    private bool _bIsTitle2Link = false;
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public bool bIsTitle2Link
+    {
+        get
+        {
+            return _bIsTitle2Link;
+        }
+        set
+        {
+            _bIsTitle2Link = value;
+        }
+    }
+
+
+
+    private bool _bIsTitle3Link = false;
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public bool bIsTitle3Link
+    {
+        get
+        {
+            return _bIsTitle3Link;
+        }
+        set
+        {
+            _bIsTitle3Link = value;
+        }
+    }
+
+    private bool _bIsTitle4Link = false;
+    [Conversion(DataTableConversion = true, AllowDbNull = false)]
+    public bool bIsTitle4Link
+    {
+        get
+        {
+            return _bIsTitle4Link;
+        }
+        set
+        {
+            _bIsTitle4Link = value;
+        }
+    }
+
+
+    #endregion
+
+    #region "functions"
+
+    public string fn_SaveHeaders()
+    {
+        DBHeadersClass objdb = new DBHeadersClass();
+        return objdb.fn_SaveHeaders(strFilename, strH1, strH2, strH4, strTitle1, strTitle2, strTitle3, strTitle4, strLink1, strLink2, strLink3, strLink4, bIsTitle1Link, bIsTitle2Link, bIsTitle3Link, bIsTitle4Link);
+    }
+
+    public string fn_EditHeaders()
+    {
+        DBHeadersClass objdb = new DBHeadersClass();
+        return objdb.fn_EditHeaders(iID, strFilename, strH1, strH2, strH4, strTitle1, strTitle2, strTitle3, strTitle4, strLink1, strLink2, strLink3, strLink4, bIsTitle1Link, bIsTitle2Link, bIsTitle3Link, bIsTitle4Link);
+    }
+
+
+    public CoreWebList<headerClass> fn_GetHeadersById()
+    {
+        DBHeadersClass objdb = new DBHeadersClass();
+        return objdb.fn_GetHeadersById(iID);
+    }
+
+
+    public CoreWebList<headerClass> fn_GetHeadersByFilename()
+    {
+        DBHeadersClass objdb = new DBHeadersClass();
+        return objdb.fn_GetHeadersByFilename(strFilename);
+    }
+    
+    
+
+    public string fn_DeleteHeaders()
+    {
+        DBHeadersClass objdb = new DBHeadersClass();
+        return objdb.fn_DeleteHeaders(iID);
+    }
+
+    public CoreWebList<headerClass> fn_GetHeaderList()
+    {
+        DBHeadersClass objdb = new DBHeadersClass();
+        return objdb.fn_GetHeaderList();
+    }
+
+    #endregion
+
+}

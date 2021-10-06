@@ -1,0 +1,316 @@
+﻿.font_validation_error{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #FF0000;}
+
+.header_login
+{
+    COLOR: #CC0000;
+    FONT-SIZE: 18px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold;
+	FONT-Family:Verdana;
+}
+
+.input_login 
+{
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+}
+
+.select_login 
+{
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+}
+
+._Browse
+{
+    position: relative;
+    background-image:url('../images/upload.png');
+    background-repeat:no-repeat;
+    height:75px;
+}
+
+._file {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+	height:75px;
+}
+
+._upload
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+
+.myHeader
+{
+    font-size:13px;
+    border:1px solid #ccc;
+    background-color:#727C83;
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+
+.boxText { font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+.errorBox { font-family : Verdana, Arial, sans-serif; font-size : 10px; background: #ffb3b5; font-weight: bold; }
+.stockWarning { font-family : Verdana, Arial, sans-serif; font-size : 10px; color: #cc0033; }
+.productsNotifications { background: #f2fff7; }
+.orderEdit { font-family : Verdana, Arial, sans-serif; font-size : 10px; color: #70d250; text-decoration: underline; }
+
+.font_left_nav{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #6B7DBD;}
+
+.font_head{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #000000;}
+
+.font_head_1{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #6B7DBD;}
+.font_head_2{ font-family : "segoe ui",arial,sans-serif; font-size : 16px;color: #FFFFFF;}
+.font_head_3{ font-family : Verdana, Arial, sans-serif; font-size : 16px;color: #6B7DBD;}
+.font_head_4{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #6B7DBD;}
+
+.font_text2{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #000000;font-weight: bold;}
+.font_text{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #000000;}
+.font_text1{ font-family : Verdana, Arial, sans-serif; font-size : 14px;color:#6B7DBD}
+
+.font_title_text{ font-family : Verdana, Arial, sans-serif; font-size : 14px;color:White;font-weight: bold;}
+.font_th_text{ font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #000000;font-weight: bold;}
+
+.tr_bg{background : #F7F7F7}
+
+.table_info{ border-color:#6B7DBD; }
+.font_info{ font-family : Arial, sans-serif; font-size : 12px;color:#6B7DBD;font-weight: bold;}
+
+.table_error{ border-color:#FF0000; }
+.font_error{ font-family : Arial, sans-serif; font-size : 12px;color:#FF0000;font-weight: bold;}
+
+.static_menu_item{background : url('../Images/nav_left_bg.gif') ; 
+font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #6B7DBD;
+}
+.dynamic_menu_item{background : url('../Images/nav_left_bg.gif') ; 
+font-family : Verdana, Arial, sans-serif; font-size : 12px;color: #6B7DBD;
+}
+
+body {
+  font-family: Verdana;
+  font-size : small;
+  background: #FFFFFF;
+  background-repeat: repeat;
+  color: #000000;
+  margin: 0px;
+}
+
+A {
+  color: #000000;
+  text-decoration: none;
+}
+
+A:hover {
+  color: #AABBDD;
+  text-decoration: underline;
+}
+
+FORM {
+	display: inline;
+}
+
+A.headerNavigation { 
+  color: #FFFFFF; 
+}
+
+A.headerNavigation:hover {
+  color: #ffffff;
+}
+
+input 
+{
+	background-color: #EFEFFF;
+	border: 1px solid #000000;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+}
+
+._edit 
+{
+	background-color:transparent;
+	border: 0px solid #000000;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+}
+
+.txtBox, .txtbox  
+{
+	background-color: #EFEFEF;
+	border: 1px solid #ccc;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+	width:270px;
+	height:21px;
+	-moz-border-radius:3px;
+}
+
+.ddlBox 
+{
+	background-color: #EFEFEF;
+	border: 1px solid #ccc;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+	width:270px;
+	height:21px;
+	-moz-border-radius:3px;
+}
+
+.txtArea 
+{
+	background-color: #EFEFEF;
+	border: 1px solid #ccc;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+	width:90%;
+	height:78px;
+	-moz-border-radius:3px;
+}
+
+.btn
+{
+    background-color: #E7E7E7;
+    border: 1px solid #CCCCCC;
+    color: #807068;
+    font-weight: bold;
+    height: 27px;
+    width: 78px;
+    -moz-border-radius: 4px;
+}
+
+select 
+{
+	background-color: #EFEFFF;
+	border: 1px solid #6B7DBD;
+	font-family : Verdana, Arial, sans-serif; 
+	font-size : 12px;
+	color: #000000;
+}
+
+
+.multiList
+{
+    background-color:#efefef;
+    border: 1px solid #CCCCCC;
+    -moz-border-radius: 5px;
+    color: #000000;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.main_top_bottom_background{ background : url('../Images/top_bottom_bg.gif')
+}
+
+.header{ background : url('../Images/header.gif')
+}
+
+.up_image
+{
+    max-width:125px;
+}
+.link
+{
+    color: White;
+    font-size: 15px;
+    font-family:Verdana;
+}
+
+.link:hover
+{
+    color: White;
+    font-size: 15px;
+    font-family:Verdana;
+}
+
+th
+{
+    background-color: DarkSeaGreen;
+    border:1px solid DarkSeaGreen;
+    -moz-border-radius: 3px 3px 3px 9px;
+    color: white;
+}
+
+th a
+{
+    color: white;
+    text-decoration:none;
+}
+
+th a:hover
+{
+    color: white;
+    text-decoration:underline;
+}
+
+._heading
+{
+    border-bottom:1px dotted DarkSeaGreen; 
+    padding:5px 5px 5px 9px;
+    background-color:DarkSeaGreen;
+    -moz-border-radius: 3px 3px 3px 9px;
+}
+
+.photo
+{
+    max-width:80px;
+    max-height:80px;
+    border:0px;
+}
+
+.info
+{
+    border:1px solid #ccc;
+    -moz-border-radius:4px;
+}
+
+._photo_box img
+{
+    max-width:170px;
+    max-height:170px;
+    border:1px solid #ccc;
+    padding:2px;
+}
+
+.link_box
+{
+    border:1px solid #ccc;
+    padding:4px;
+    background-color:#efefef;
+    -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+width:510px;
+height:21px;
+}
+
+.link_box:focus
+{
+    border:1px solid #ccc;
+    padding:4px;
+    background-color:#fff;
+    -webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+width:510px;
+height:21px;
+}

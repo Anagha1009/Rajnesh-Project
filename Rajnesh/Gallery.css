@@ -1,0 +1,106 @@
+﻿.Banner_Box
+{
+    background-color:#efefef;
+}
+
+._mainTitle
+{
+    background-color: #444;
+    padding: 5px;
+    font-size: 19px;
+    font-family: Trebuchet MS;
+    color: #fff;
+    font-style: italic;
+}
+
+.title
+{
+    font-size: 16px;
+    font-family: Trebuchet MS;
+    color: #444;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+.photos img
+{
+    max-height: 670px;
+    max-width: 370px;
+}
+.clr
+{
+    clear: both;
+    height: 5px;
+}
+
+._links, .iframeBox
+{
+    font-size: 16px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color: #0000ff;
+    font-style: italic;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+._links:hover, iframeBox:hover
+{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+    color: #444;
+    font-style: italic;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+
+.iframeBox
+{
+    font-size: 16px;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+    color: #cc0000;
+    font-style: italic;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+iframeBox:hover
+{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+    color: #444;
+    font-style: italic;
+    padding-bottom: 5px;
+    text-decoration: underline;
+}
+
+.bannerClick
+{
+    font-family:Trebuchet MS;
+    font-size:17px;
+    color:#444;
+    text-decoration:none;
+}
+
+.bannerClick:hover
+{
+    font-family:Trebuchet MS;
+    font-size:17px;
+    color:#cc0000;
+    text-decoration:none;
+}
+
+._bannerlinks
+{
+    font-size:17px;
+    color:#cc0000;
+}
+
+._bannerlinks:hover
+{
+    font-size:17px;
+    color:#444;
+}

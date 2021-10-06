@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script type="text/javascript" src="progressbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="skins/round-pink/progressbar.css">
+</head>
+<body>
+    <table width="370px" align="center">
+        <tr>
+            <td align="left">
+                <div class="progressBar round-pink" rank="80">
+                    <div style="float: left">
+                    </div>
+                    &nbsp;Asp.Net
+                </div>
+                <br />
+                <div class="progressBar round-pink" rank="70">
+                    <div style="float: left">
+                    </div>
+                    &nbsp;C#
+                </div>
+                <br />
+                <div class="progressBar round-pink" rank="60">
+                    <div style="float: left">
+                    </div>
+                    &nbsp;SQL Server
+                </div>
+                <script type="text/javascript">
+                    $(".progressBar").each(function () {
+                        var rank = $(this).attr("rank");
+                        progressBar(rank, $(this));
+                    });
+	            </script>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

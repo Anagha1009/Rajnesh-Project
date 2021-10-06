@@ -1,0 +1,187 @@
+﻿/* Compare Box Starts  */
+
+.photoframe
+{
+    max-width:101px;
+    max-height:101px;
+    border:1px solid #ccc;
+    padding:2px;
+}
+
+.Compare_Box
+    {
+        border:1px solid #ccc;
+        border-collapse:collapse;
+    }
+    
+    .Compare_Box tr td
+    {
+        border:1px solid #ccc;
+        padding:7px;
+        vertical-align:top;
+    }
+    
+    .Compare_Box tr td a
+    {
+        color:#00759C;
+        font-size:15px;
+        font-family:Trebuchet MS;
+        font-style:italic;
+        font-weight:bold;
+    }
+    
+    .CompareBox
+    {
+        padding: 10px 10px 20px 10px;
+        border: solid 1px #FFF;
+        box-shadow: 0px 0px 5px #CCC;
+        background: -webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#e8e8e8));
+        background: -moz-linear-gradient(top,#f4f4f4,#e8e8e8);
+        background: linear-gradient(top,#f4f4f4,#e8e8e8);
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        border-radius: 7px;
+    }
+    
+    .btnCompare
+    {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        color: #444;
+        background: #DDD;
+        border: solid 1px #FFF;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #CCC;
+        background: -webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#e8e8e8));
+        background: -moz-linear-gradient(top,#f4f4f4,#e8e8e8);
+        background: linear-gradient(top,#f4f4f4,#e8e8e8);
+        padding: 8px;
+        text-decoration: none;
+    }
+    
+    .CompareButton a
+    {
+        text-decoration:none;
+    }
+    
+    .CompareButton a:hover
+    {
+        text-decoration:none;
+    }
+    
+    .txt_Box
+    {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: normal;
+        color: #444;
+        border: 1px solid #ccc;
+        padding: 4px;
+        width: 279px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+    .ddl_Box
+    {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: normal;
+        color: #444;
+        border: 1px solid #ccc;
+        padding: 4px;
+        width: 189px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+    
+    .titleline
+    {
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: bold;
+        color: #444;
+        padding: 0px 5px;
+    }
+    
+    .no_padding
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .no_padding ul
+    {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .vs_Summary
+    {
+        font-style: italic;
+        font-family: Arial;
+        font-size: 13px;
+        padding: 0px 5px;
+        color: #cc0000;
+    }
+    
+    .CompareBox span
+    {
+        height: 1px;
+        line-height: 1px;
+    }
+    .CompareButton
+    {
+        text-align:left;
+        padding:10px;
+    }
+    
+    .hidden
+    {
+        visibility:hidden;
+        display:none;
+    }
+    
+    .compa_list
+    {
+        float:left;
+        padding:5px;
+    }
+    
+    /* Compare Box Ends */
+    
+    
+     .btnBox
+    {
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: bold;
+        color: #444;
+        background: #DDD;
+        border: solid 1px #FFF;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #CCC;
+        background: -webkit-gradient(linear,left top,left bottom,from(#f4f4f4),to(#e8e8e8));
+        background: -moz-linear-gradient(top,#f4f4f4,#e8e8e8);
+        background: linear-gradient(top,#f4f4f4,#e8e8e8);
+        padding: 8px;
+        text-decoration: none;
+        cursor:pointer;
+    }
+    
+    .info
+    {
+        border:1px solid #ccc;
+        font-size:19px;
+        font-family:Trebuchet MS;
+        font-style:italic;
+        color:#00759C;
+        font-weight:bold;
+        -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding:5px;
+    }

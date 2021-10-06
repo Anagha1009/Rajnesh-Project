@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home"  description="Home Page" url="~/admin/default.aspx">
+
+    <siteMapNode title="Distance" description="Distance">
+      <siteMapNode title="University" description="University" url="~/admin/DistanceUniversity.aspx"></siteMapNode>
+      <siteMapNode title="Colleges" description="Colleges" url="~/admin/DistanceColleges.aspx"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="University" description="University">
+      <siteMapNode title="University Type" description="University Type" url="~/admin/UniversityType.aspx" />
+      <siteMapNode title="University List" description="University List" url="~/admin/University_List.aspx" />
+      <siteMapNode title="University City" description="University City" url="~/admin/UniversityCity.aspx" />
+    </siteMapNode>
+
+
+    <siteMapNode title="Blogs" description="Blogs" url="~/admin/Blogs.aspx" />
+
+    <siteMapNode title="Newsletters" description="Newsletters" url="~/admin/Newsletters.aspx" />
+
+    <siteMapNode title="Qualification" description="Qualification" url="~/admin/Qualification.aspx" />
+    <siteMapNode title="Education Interest" description="Education Interest" url="~/admin/EduCationInterest.aspx" />
+
+    <siteMapNode title="States" description="States" url="~/admin/States.aspx" />
+
+    <siteMapNode title="Docs" description="Docs" url="~/admin/Docs.aspx" />
+    <siteMapNode title="Authors" description="Authors" url="~/admin/Authors.aspx" />
+
+    <siteMapNode title="Managements" description="Managements" url="~/admin/TeamMembers.aspx" />
+
+    <siteMapNode title="Banners" description="Banners" url="~/admin/Banner.aspx" />
+
+    <siteMapNode title="Ebooks" description="Ebooks" url="~/admin/Ebook.aspx" />
+
+    <siteMapNode title="Institute" description="Institute">
+      <siteMapNode title="Category" description="Category" url="~/admin/InstituteCategory.aspx" />
+      <siteMapNode title="Institutes" description="Institutes" url="~/admin/Institutes.aspx" />
+    </siteMapNode>
+
+
+    <siteMapNode title="Competition" description="Competition">
+      <siteMapNode title="Competition" description="Competition" url="~/admin/Competition.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="Reviews" description="Reviews">
+      <siteMapNode title="Factors" description="Factors" url="~/admin/FactorHeading.aspx" />
+      <siteMapNode title="Reviews" description="Reviews" url="~/admin/EduReviews.aspx" />
+    </siteMapNode>
+    
+
+    <siteMapNode title="Schools" description="Schools">
+      <siteMapNode title="Category" description="Category" url="~/admin/SchoolCategory.aspx" />
+      <siteMapNode title="Schools" description="Schools" url="~/admin/Schools.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="Contents" description="Contents" url="~/admin/Contents.aspx" />
+
+    <siteMapNode title="Entrance" description="Entrance">
+      <siteMapNode title="Category" description="Category" url="~/admin/EntranceCategory.aspx" />
+      <siteMapNode title="Exams" description="Exams" url="~/admin/EntranceExams.aspx" />
+      
+    </siteMapNode>
+
+    <siteMapNode title="QueryGenerator" description="QueryGenerator" url="~/admin/QueryGenerator.aspx" />
+    <siteMapNode title="Votes" description="Votes" url="~/admin/Votes.aspx" />
+
+    <siteMapNode title="Category" description="Category" url="~/admin/Category.aspx" />
+    <siteMapNode title="News" description="News" url="~/admin/News.aspx" />
+
+    <siteMapNode title="Comments" description="Comments">
+      <siteMapNode title="Comments" description="Comments" url="~/admin/Comments.aspx" />
+      <siteMapNode title="Abused Comments" description="Abused Comments" url="~/admin/Comments_Abused.aspx" />
+    </siteMapNode>
+
+    <siteMapNode title="PageGenerator" description="PageGenerator" url="~/admin/PageGenerator.aspx" />
+
+    <siteMapNode title="StudyAbroad" description="StudyAbroad">
+      <siteMapNode title="ModeofStudy" description="ModeofStudy" url="~/admin/ModeofStudy.aspx" />
+      <siteMapNode title="LevelofStudy" description="LevelofStudy" url="~/admin/LevelofStudy.aspx" />
+      <siteMapNode title="Country" description="Country" url="~/admin/Country.aspx" />
+    </siteMapNode>
+    <!-- Jobs Start -->
+    <siteMapNode title="Fresher Jobs" description="Fresher Jobs">
+      <siteMapNode title="Jobs" description="Jobs" url="~/admin/Jobs.aspx" />
+      <siteMapNode title="JobCategory" description="JobCategory" url="~/admin/JobCategory.aspx" />
+      <siteMapNode title="JobCompany" description="JobCompany" url="~/admin/JobCompany.aspx" />
+      <siteMapNode title="Job Generator" description="Job Generator" url="~/admin/JobGenerator.aspx" />
+      <siteMapNode title="Job List" description="Job List" url="~/admin/JobGeneratorList.aspx" />
+    </siteMapNode>
+    <!-- Jobs End -->
+
+    <!-- Placement Papers Start -->
+    <siteMapNode title="Placement Papers" description="Placement Papers" url="~/admin/Placement-Papers.aspx"></siteMapNode>
+    <siteMapNode title="Papers" description="Papers" url="~/admin/Papers.aspx"></siteMapNode>
+    <siteMapNode title="Paper List" description="Papers" url="~/admin/PaperGeneratorList.aspx"></siteMapNode>
+    <siteMapNode title="Paper Generator" description="Papers" url="~/admin/PaperGenerator.aspx"></siteMapNode>
+    <!-- Placement Papers End  -->
+
+  </siteMapNode>
+</siteMap>

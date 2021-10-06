@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+#toggle-view {
+	list-style:none;	
+	font-family:arial;
+	font-size:11px;
+	margin:0;
+	padding:0;
+	width:606px;
+}
+
+	#toggle-view li{
+		margin:10px;
+		border-bottom:1px solid #e0e0e0;
+		position:relative;
+		cursor:pointer;
+		line-height:26px;
+		width:606px;
+		padding:0px 0 0 5px;
+		margin:0 0 5px 0;
+	}
+
+	#toggle-view h3 {
+		margin:0 0 0 10px;
+		font-size:14px;
+		font-weight:normal;
+		background-image:url(../images/hot_pakages_arrow.png);
+		background-repeat:no-repeat;
+		background-position:left; 
+		padding:0 0 0 15px; 
+		color:#188eb7;
+	}
+	#toggle-view h3 span{background-image:url(../images/accordian_button.jpg);
+	background-repeat:no-repeat; 
+	background-position:right;
+	float:right;
+	margin:0px;
+	padding:0px;
+	width:86px;
+	height:19px;
+	line-height:18px;
+	text-align:center;
+	color:#FFF;
+	}
+	#toggle-view span {
+		position:absolute;
+		right:12px; top:0;
+		color:#333;
+		font-size:13px;
+	}
+	
+	#toggle-view ul {
+		margin:0px;
+		display:none;
+		line-height:normal;
+		list-style:none;
+		padding:0px;
+	}
+	#toggle-view ul li{	width:233px;
+		padding:0px 0 0 5px;
+		margin:0 0 5px 0;
+		border:none;
+	
+
+	
+	

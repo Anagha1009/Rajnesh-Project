@@ -1,0 +1,1 @@
+function RegisterStarRatingScript() { $(".auto-submit-star").rating({ callback: function (t) { $("#hdfldStarValue1").attr("value", t), $(document.getElementById("Button1"))[0].click() } }) } $(function () { $(".auto-submit-star").rating({ callback: function (t) { $("#hdfldStarValue").attr("value", t), $(document.getElementById("Button1"))[0].click() } }) });

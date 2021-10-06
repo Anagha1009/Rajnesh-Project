@@ -1,0 +1,20 @@
+.round-pink 
+{
+    height:25px;
+	border-radius: 5px;
+	background: #e6e5e2;	
+	box-shadow: 0 -1px 1px #c0bfbc inset;
+}
+
+.round-pink div 
+{
+    height:25px;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px #333;	
+	background-color: #ccc;
+	background: -webkit-linear-gradient(top, #ccc, #444);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#444)); 
+	background: -moz-linear-gradient(top, #ccc, #444); 
+	background: -ms-linear-gradient(top, #ccc, #444); 
+	background: -o-linear-gradient(top, #ccc, #444);	
+}

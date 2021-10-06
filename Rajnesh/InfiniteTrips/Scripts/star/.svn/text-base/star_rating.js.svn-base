@@ -1,0 +1,67 @@
+
+$(function () {
+    $('.auto-submit-star').rating({
+        callback: function (value, link) {
+            // alert(value + " - " + link);
+            // 'this' is the hidden form element holding the current value
+            // 'value' is the value selected
+            // 'element' points to the link element that received the click.
+            //alert($('#<%=hdfldStarValue.ClientID%>').val(value));
+
+            //$('#<%=hdfldStarValue.ClientID%>').val(value);
+            $('#hdfldStarValue1').attr('value', value);
+            //$('#<%= HiddenFieldAccountId.ClientID %>').attr('value', accountId);
+            //$(document.getElementById('hdfldStarValue')).val(value);
+
+            //alert($('#hdfldStarValue1').val());
+
+            //$('#<%=hdfldStarValue.ClientID%>').val(value);
+            // To submit the form automatically:
+            //this.form.submit();
+
+            // To submit the form via ajax:
+            //$(this.form).ajaxSubmit();
+
+
+            $(document.getElementById('Button1'))[0].click();
+
+            //$('#<%=Button1.ClientID%>')[0].click();
+
+        }
+    });
+});
+
+
+function RegisterStarRatingScript() {
+    
+    $('.auto-submit-star').rating({
+        callback: function (value, link) {
+            // alert(value + " - " + link);
+            // 'this' is the hidden form element holding the current value
+            // 'value' is the value selected
+            // 'element' points to the link element that received the click.
+            //alert($('#<%=hdfldStarValue.ClientID%>').val(value));
+
+            //$('#<%=hdfldStarValue.ClientID%>').val(value);
+            $('#hdfldStarValue1').attr('value', value);
+            //$('#<%= HiddenFieldAccountId.ClientID %>').attr('value', accountId);
+            //$(document.getElementById('hdfldStarValue')).val(value);
+
+            //alert($('#hdfldStarValue1').val());
+
+            //$('#<%=hdfldStarValue.ClientID%>').val(value);
+            // To submit the form automatically:
+            //this.form.submit();
+
+            // To submit the form via ajax:
+            //$(this.form).ajaxSubmit();
+
+
+            $(document.getElementById('Button1'))[0].click();
+
+            //$('#<%=Button1.ClientID%>')[0].click();
+
+        }
+    });
+
+}

@@ -1,0 +1,376 @@
+﻿
+using System;
+using System.Data.SqlClient;
+using System.Configuration;
+using yo_lib;
+
+/// <summary>
+/// Summary description for DBArticleClass
+/// </summary>
+public class DBHeadersClass
+{
+	private SqlConnection objConnection = null;
+    private SqlDataReader objReader = null;
+    private SqlCommand objCommand = null;
+
+    public string fn_SaveHeaders(string strFilename, string strH1, string strH2, string strH4, string strTitle1, string strTitle2, string strTitle3, string strTitle4, string strLink1, string strLink2, string strLink3, string strLink4, bool IsTitle1Link, bool IsTitle2Link, bool IsTitle3Link, bool IsTitle4Link)
+    {
+        try
+        {
+            objConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["eduConnectionString"].ConnectionString);
+
+            objConnection.Open();
+
+            objCommand = new SqlCommand("INSERT INTO edu_headers(Filename, Header1, Header2, Header4, Title1, Title2, Title3, Title4, Link1, Link2, Link3, Link4, Link1Status, Link2Status, Link3Status, Link4Status) VALUES (@Filename, @Header1, @Header2, @Header4, @Title1, @Title2, @Title3, @Title4, @Link1, @Link2, @Link3, @Link4, @Link1Status, @Link2Status, @Link3Status, @Link4Status)", objConnection);
+
+            objCommand.Parameters.AddWithValue("@Filename", strFilename);
+            
+            objCommand.Parameters.AddWithValue("@Header1", strH1);
+            objCommand.Parameters.AddWithValue("@Header2", strH2);
+            objCommand.Parameters.AddWithValue("@Header4", strH4);
+
+            objCommand.Parameters.AddWithValue("@Title1", strTitle1);
+            objCommand.Parameters.AddWithValue("@Title2", strTitle2);
+            objCommand.Parameters.AddWithValue("@Title3", strTitle3);
+            objCommand.Parameters.AddWithValue("@Title4", strTitle4);
+
+            objCommand.Parameters.AddWithValue("@Link1", strLink1);
+            objCommand.Parameters.AddWithValue("@Link2", strLink2);
+            objCommand.Parameters.AddWithValue("@Link3", strLink3);
+            objCommand.Parameters.AddWithValue("@Link4", strLink4);
+
+            objCommand.Parameters.AddWithValue("@Link1Status", IsTitle1Link);
+            objCommand.Parameters.AddWithValue("@Link2Status", IsTitle2Link);
+            objCommand.Parameters.AddWithValue("@Link3Status", IsTitle3Link);
+            objCommand.Parameters.AddWithValue("@Link4Status", IsTitle4Link);
+            
+            if (objCommand.ExecuteNonQuery() > 0)
+            {
+                return "SUCCESS : Record has been inserted";
+            }
+            else
+            {
+                return "ERROR : SQL Exception";
+            }
+        }
+        catch (Exception ex)
+        {
+            return "ERROR : " + ex.Message;
+        }
+        finally
+        {
+            if (objConnection != null)
+            {
+                objConnection.Close();
+            }
+        }
+    }
+
+    public string fn_EditHeaders(int iID, string strFilename, string strH1, string strH2, string strH4, string strTitle1, string strTitle2, string strTitle3, string strTitle4, string strLink1, string strLink2, string strLink3, string strLink4, bool IsTitle1Link, bool IsTitle2Link, bool IsTitle3Link, bool IsTitle4Link)
+    {
+        try
+        {
+            objConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["eduConnectionString"].ConnectionString);
+
+            objConnection.Open();
+
+            objCommand = new SqlCommand("UPDATE edu_headers SET Filename = @Filename, Header1 = @Header1, Header2 = @Header2, Header4 = @Header4, Title1 = @Title1, Title2 = @Title2, Title3 = @Title3, Title4 = @Title4, Link1 = @Link1, Link2 = @Link2, Link3 = @Link3, Link4 = @Link4, Link1Status = @Link1Status, Link2Status = @Link2Status, Link3Status = @Link3Status, Link4Status = @Link4Status WHERE Id = @ID", objConnection);
+
+            objCommand.Parameters.AddWithValue("@ID", iID);
+            objCommand.Parameters.AddWithValue("@Filename", strFilename);
+            objCommand.Parameters.AddWithValue("@Header1", strH1);
+            objCommand.Parameters.AddWithValue("@Header2", strH2);
+            objCommand.Parameters.AddWithValue("@Header4", strH4);
+
+
+            objCommand.Parameters.AddWithValue("@Title1", strTitle1);
+            objCommand.Parameters.AddWithValue("@Title2", strTitle2);
+            objCommand.Parameters.AddWithValue("@Title3", strTitle3);
+            objCommand.Parameters.AddWithValue("@Title4", strTitle4);
+
+            objCommand.Parameters.AddWithValue("@Link1", strLink1);
+            objCommand.Parameters.AddWithValue("@Link2", strLink2);
+            objCommand.Parameters.AddWithValue("@Link3", strLink3);
+            objCommand.Parameters.AddWithValue("@Link4", strLink4);
+
+            objCommand.Parameters.AddWithValue("@Link1Status", IsTitle1Link);
+            objCommand.Parameters.AddWithValue("@Link2Status", IsTitle2Link);
+            objCommand.Parameters.AddWithValue("@Link3Status", IsTitle3Link);
+            objCommand.Parameters.AddWithValue("@Link4Status", IsTitle4Link);
+            
+
+            if (objCommand.ExecuteNonQuery() > 0)
+            {
+                return "SUCCESS : Record has been updated";
+            }
+            else
+            {
+                return "ERROR : SQL Exception";
+            }
+        }
+        catch (Exception ex)
+        {
+            return "ERROR : " + ex.Message;
+        }
+        finally
+        {
+            if (objConnection != null)
+            {
+                objConnection.Close();
+            }
+        }
+    }
+
+    public string fn_DeleteHeaders(int iID)
+    {
+        try
+        {
+            objConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["eduConnectionString"].ConnectionString);
+
+            objConnection.Open();
+
+            objCommand = new SqlCommand("DELETE FROM edu_headers WHERE Id = @ID", objConnection);
+
+            objCommand.Parameters.AddWithValue("@ID", iID);
+
+            if (objCommand.ExecuteNonQuery() > 0)
+            {
+                return "SUCCESS : Record has been deleted";
+            }
+            else
+            {
+                return "ERROR : SQL Exception";
+            }
+        }
+        catch (Exception ex)
+        {
+            return "ERROR : " + ex.Message;
+        }
+        finally
+        {
+            if (objConnection != null)
+            {
+                objConnection.Close();
+            }
+        }
+    }
+
+    public CoreWebList<headerClass> fn_GetHeaderList()
+    {
+        CoreWebList<headerClass> objHeaderList = null;
+        headerClass objHeader = null;
+
+        try
+        {
+            objConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["eduConnectionString"].ConnectionString);
+
+            objConnection.Open();
+
+            objCommand = new SqlCommand("SELECT * FROM edu_headers order by Filename", objConnection);
+
+            objReader = objCommand.ExecuteReader();
+
+            objHeaderList = new CoreWebList<headerClass>();
+
+            while (objReader.Read())
+            {
+                objHeader = new headerClass();
+
+                objHeader.iID = int.Parse(objReader["Id"].ToString());
+                
+                objHeader.strFilename= objReader["Filename"].ToString();
+                objHeader.strH1 = objReader["Header1"].ToString();
+                objHeader.strH2 = objReader["Header2"].ToString();
+                objHeader.strH4 = objReader["Header4"].ToString();
+                
+                objHeader.strTitle1 = objReader["Title1"].ToString();
+                objHeader.strTitle2 = objReader["Title2"].ToString();
+                objHeader.strTitle3 = objReader["Title3"].ToString();
+                objHeader.strTitle4 = objReader["Title4"].ToString();
+                
+                objHeader.strLink1 = objReader["Link1"].ToString();
+                objHeader.strLink2 = objReader["Link2"].ToString();
+                objHeader.strLink3 = objReader["Link3"].ToString();
+                objHeader.strLink4 = objReader["Link4"].ToString();
+
+                objHeader.bIsTitle1Link = bool.Parse(objReader["Link1Status"].ToString());
+                objHeader.bIsTitle2Link = bool.Parse(objReader["Link2Status"].ToString());
+                objHeader.bIsTitle3Link = bool.Parse(objReader["Link3Status"].ToString());
+                objHeader.bIsTitle4Link = bool.Parse(objReader["Link4Status"].ToString());
+                
+                objHeaderList.Add(objHeader);
+            }
+
+            if (objReader != null)
+            {
+                objReader.Close();
+            }
+
+            return objHeaderList;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            if (objReader != null)
+            {
+                objReader.Close();
+            }
+
+            if (objConnection != null)
+            {
+                objConnection.Close();
+            }
+        }
+    }
+
+    public CoreWebList<headerClass> fn_GetHeadersById(int ID)
+    {
+        CoreWebList<headerClass> objHeaderList = null;
+        headerClass objHeader = null;
+
+        try
+        {
+            objConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["eduConnectionString"].ConnectionString);
+
+            objConnection.Open();
+
+            objCommand = new SqlCommand("SELECT * FROM edu_headers WHERE Id = @ID", objConnection);
+
+            objCommand.Parameters.AddWithValue("@ID", ID);
+
+            objReader = objCommand.ExecuteReader();
+
+            objHeaderList = new CoreWebList<headerClass>();
+
+            if (objReader.Read())
+            {
+                objHeader = new headerClass();
+
+                objHeader.iID = int.Parse(objReader["Id"].ToString());
+
+                objHeader.strFilename = objReader["Filename"].ToString();
+                objHeader.strH1 = objReader["Header1"].ToString();
+                objHeader.strH2 = objReader["Header2"].ToString();
+                objHeader.strH4 = objReader["Header4"].ToString();
+
+                objHeader.strTitle1 = objReader["Title1"].ToString();
+                objHeader.strTitle2 = objReader["Title2"].ToString();
+                objHeader.strTitle3 = objReader["Title3"].ToString();
+                objHeader.strTitle4 = objReader["Title4"].ToString();
+
+                objHeader.strLink1 = objReader["Link1"].ToString();
+                objHeader.strLink2 = objReader["Link2"].ToString();
+                objHeader.strLink3 = objReader["Link3"].ToString();
+                objHeader.strLink4 = objReader["Link4"].ToString();
+
+                objHeader.bIsTitle1Link = bool.Parse(objReader["Link1Status"].ToString());
+                objHeader.bIsTitle2Link = bool.Parse(objReader["Link2Status"].ToString());
+                objHeader.bIsTitle3Link = bool.Parse(objReader["Link3Status"].ToString());
+                objHeader.bIsTitle4Link = bool.Parse(objReader["Link4Status"].ToString());
+
+                objHeaderList.Add(objHeader);
+            }
+
+            if (objReader != null)
+            {
+                objReader.Close();
+            }
+
+            return objHeaderList;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            if (objReader != null)
+            {
+                objReader.Close();
+            }
+
+            if (objConnection != null)
+            {
+                objConnection.Close();
+            }
+        }
+    }
+
+    public CoreWebList<headerClass> fn_GetHeadersByFilename(string strFilename)
+    {
+        CoreWebList<headerClass> objHeaderList = null;
+        headerClass objHeader = null;
+
+        try
+        {
+            objConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["eduConnectionString"].ConnectionString);
+
+            objConnection.Open();
+
+            objCommand = new SqlCommand("SELECT * FROM edu_headers WHERE Filename = @Filename", objConnection);
+
+            objCommand.Parameters.AddWithValue("@Filename", strFilename);
+
+            objReader = objCommand.ExecuteReader();
+
+            objHeaderList = new CoreWebList<headerClass>();
+
+            if (objReader.Read())
+            {
+                objHeader = new headerClass();
+
+                objHeader.iID = int.Parse(objReader["Id"].ToString());
+
+                objHeader.strFilename = objReader["Filename"].ToString();
+                objHeader.strH1 = objReader["Header1"].ToString();
+                objHeader.strH2 = objReader["Header2"].ToString();
+                objHeader.strH4 = objReader["Header4"].ToString();
+
+                objHeader.strTitle1 = objReader["Title1"].ToString();
+                objHeader.strTitle2 = objReader["Title2"].ToString();
+                objHeader.strTitle3 = objReader["Title3"].ToString();
+                objHeader.strTitle4 = objReader["Title4"].ToString();
+
+                objHeader.strLink1 = objReader["Link1"].ToString();
+                objHeader.strLink2 = objReader["Link2"].ToString();
+                objHeader.strLink3 = objReader["Link3"].ToString();
+                objHeader.strLink4 = objReader["Link4"].ToString();
+
+                objHeader.bIsTitle1Link = bool.Parse(objReader["Link1Status"].ToString());
+                objHeader.bIsTitle2Link = bool.Parse(objReader["Link2Status"].ToString());
+                objHeader.bIsTitle3Link = bool.Parse(objReader["Link3Status"].ToString());
+                objHeader.bIsTitle4Link = bool.Parse(objReader["Link4Status"].ToString());
+
+                objHeaderList.Add(objHeader);
+            }
+
+            if (objReader != null)
+            {
+                objReader.Close();
+            }
+
+            return objHeaderList;
+        }
+        catch (Exception ex)
+        {
+            throw ex;
+        }
+        finally
+        {
+            if (objReader != null)
+            {
+                objReader.Close();
+            }
+
+            if (objConnection != null)
+            {
+                objConnection.Close();
+            }
+        }
+    }
+
+    
+}

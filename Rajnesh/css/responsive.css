@@ -1,0 +1,543 @@
+.mobile-ad,
+.mobile-ad-block {
+    display: none;
+}
+
+.desktop-ad-block {
+    display: inline-table;
+}
+
+ .owl-carousel .owl-item img {
+        height: 375px;
+    }
+
+
+@media (min-width: 568px) and (max-width: 980px) {
+    .owl-carousel .owl-item img {
+        height: 375px;
+    }
+
+    .desktop-ad,
+    .desktop-ad-block {
+        display: none !important;
+    }
+
+    .mobile-ad-block {
+        display: inline-table;
+    }
+
+    .mobile-ad,
+    .search {
+        display: block;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0 7px;
+    }
+
+    .logo {
+        width: 33%;
+    }
+
+        .logo h1 {
+            font-size: 29px;
+        }
+
+    .social-icon {
+        width: 34%;
+    }
+
+    .google-search.right {
+        width: 32%;
+    }
+
+    .google-search .txtbox {
+        width: 57%;
+    }
+
+    .google-search .btnSubmit {
+        width: 40%;
+    }
+
+    .box,
+    .colleges-in-india.box,
+    .courses-in-india.box,
+    .exams-in-india.box,
+    .schools-in-india.box,
+    .slider {
+        width: 49%;
+    }
+
+    .universities.carousel li {
+        width: 19%;
+    }
+
+    .institutes.carousel li,
+    .schools.carousel li {
+        width: 16%;
+    }
+
+    .left-side {
+        width: 100%;
+    }
+
+    .Colleges-in-India.box,
+    .Courses-in-India.box,
+    .Exams-in-India.box,
+    .Schools-in-India.box {
+        width: 49%;
+    }
+
+    .Courses-in-India.box, .Exams-in-India.box {
+        margin-left: 7px;
+    }
+
+    .slider {
+        margin-right: 7px;
+    }
+
+    .box-content .search .college-location,
+    .box-content .search .course-type,
+    .box-content .search .school-location,
+    .box-content .search .school-type {
+        width: 40%;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .rating {
+        width: 55%;
+    }
+
+    .social-share {
+        width: 44%;
+    }
+
+    .list li {
+        width: 49%;
+    }
+
+    .google-ad.square {
+        width: 30%;
+    }
+
+    .voting {
+        width: 53%;
+    }
+
+    .col-1 {
+        margin-right: 0;
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    #details-page .box ul li.college-logo {
+        margin-right: 10px;
+        width: 33%;
+    }
+
+    #details-page .box ul li.college-detail {
+        margin-right: 10px;
+        width: 60%;
+    }
+
+    .details-page-tab .tab-section li {
+        width: 33%;
+    }
+
+        .details-page-tab .tab-section li.college-compare-tab {
+            float: left;
+            margin-top: 1px;
+            width: 66%;
+        }
+
+        .details-page-tab .tab-section li a {
+            border-radius: 0;
+            margin-bottom: 1px;
+        }
+
+    #details-page .social-share {
+        width: 100%;
+    }
+
+    #details-page .box .details-page-tab #photos ul li,
+    #details-page .box .rating ul li:first-child,
+    #details-page .box ul li.college-image {
+        width: 33%;
+    }
+
+    #details-page .box .rating ul li:last-child,
+    #details-page .box .rating ul li:nth-child(2) {
+        text-align: center;
+        width: 33%;
+    }
+
+    .rating-text {
+        margin-left: 0;
+    }
+
+    #details-page .box .details-page-tab #videos ul li {
+        width: 49%;
+    }
+
+    #special-page .left-side {
+        width: 35%;
+    }
+
+    #special-page .right-side {
+        width: 63%;
+    }
+
+    .review-details {
+        padding: 0;
+    }
+
+    #special-page .rating-inner-dv .col-1 {
+        width: 35%;
+    }
+
+    #special-page .rating-inner-dv .col-2 {
+        width: 64%;
+    }
+
+    .footer-menu {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 767px) {
+    .desktop-ad,
+    .desktop-ad-block {
+        display: none !important;
+    }
+
+    .mobile-ad-block {
+        display: inline-table;
+    }
+
+    .mobile-ad {
+        display: block;
+    }
+
+    .voting {
+        margin-top: 0;
+        width: 45%;
+    }
+
+    #grd_Jobs .jobs_info, #grd_papers .jobs_info {
+        width: 80%;
+    }
+
+    .owl-carousel .owl-item img {
+        height: 375px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 567px) {
+    .owl-carousel .owl-item img {
+        height: 200px;
+    }
+    .colleges-in-india.box,
+    .courses-in-india.box,
+    .exams-in-india.box,
+    .schools-in-india.box,
+    .slider {
+        margin-right: 0;
+    }
+
+    .google-ad.square,
+    .right-side,
+    .slider {
+        width: 100%;
+    }
+
+    .news.box,
+    .right-side {
+        margin-top: 10px;
+    }
+
+    .google-search.right,
+    .logo,
+    .rating,
+    .social-share {
+        text-align: center;
+    }
+
+    .desktop-ad,
+    .desktop-ad-block {
+        display: none !important;
+    }
+
+    .mobile-ad-block {
+        display: inline-table;
+    }
+
+    .mobile-ad {
+        display: block;
+    }
+
+    body {
+        background: url(../images/bg.jpg) 0 0/100% auto repeat-y #fff;
+    }
+
+    .box,
+    .box-content .college-compare .course-type,
+    .box-content .search .college-location,
+    .box-content .search .course-type,
+    .box-content .search .school-location,
+    .box-content .search .school-type,
+    .carousel li,
+    .col-1,
+    .col-2,
+    .colleges-in-india.box,
+    .courses-in-india.box,
+    .exams-in-india.box,
+    .filter li,
+    .footer-menu,
+    .google-search .txtbox,
+    .google-search.right,
+    .institutes.carousel li,
+    .left-side,
+    .list li,
+    .logo,
+    .rating,
+    .schools-in-india.box,
+    .schools.carousel li,
+    .social-icon,
+    .social-share,
+    .voting,
+    .wrapper {
+        width: 100%;
+        display: block;
+    }
+
+    .social-share {
+        width: 100% !important;
+    }
+
+    .wrapper {
+        padding: 0 7px;
+    }
+
+    .google-search .txtbox {
+        margin-bottom: 5px;
+    }
+
+    #content {
+        padding: 20px 10px 0;
+    }
+
+    .box {
+        margin-bottom: 10px;
+    }
+
+    .Courses-in-India.box, .Exams-in-India.box {
+        margin-left: 0;
+    }
+
+    .slider {
+        margin-right: 0;
+    }
+
+    .box-content .search .college-location,
+    .box-content .search .course-type,
+    .box-content .search .school-location,
+    .box-content .search .school-type,
+    .carousel li,
+    .institutes.carousel li,
+    .rating,
+    .schools.carousel li {
+        margin-bottom: 8px;
+    }
+
+    .rating-text {
+        margin-left: 0;
+    }
+
+    .fb-like-box > iframe {
+        width: 100% !important;
+    }
+
+    #details-page .box ul li.college-logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    #details-page .box ul li.college-image {
+        vertical-align: middle;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .details-page-tab .tab-section li {
+        display: inline-block;
+        margin-bottom: 1px;
+        width: 100%;
+    }
+
+        .details-page-tab .tab-section li a {
+            border-radius: 0;
+        }
+
+        .details-page-tab .tab-section li.college-compare-tab {
+            float: left;
+            margin: 1px 0 0;
+            width: 99%;
+        }
+
+    .bread-cumb {
+        height: auto;
+    }
+
+    #details-page .box ul.info {
+        display: inline-block;
+        width: 100%;
+    }
+
+    #details-page .box ul li.college-detail {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #details-page .box .rating ul {
+        display: block;
+    }
+
+        #details-page .box .rating ul li:first-child {
+            display: inline-block;
+            width: 100%;
+        }
+
+        #details-page .box .rating ul li:nth-child(2) {
+            display: inline-block;
+            width: 49%;
+        }
+
+        #details-page .box .rating ul li:last-child {
+            display: inline-block;
+            width: 100%;
+        }
+
+    .compare-college-tab {
+        display: none;
+    }
+
+    #details-page .box .details-page-tab #photos ul li,
+    #details-page .box .details-page-tab #videos ul li,
+    #details-page .box .details-page-tab #videos ul li iframe,
+    .need-edu-loan {
+        width: 100%;
+    }
+
+        .need-edu-loan a {
+            font-size: 20px;
+        }
+
+    .quiz-box {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #special-page .left-side {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #special-page .right-side {
+        width: 100%;
+    }
+
+    .review-details {
+        display: inline-block;
+        padding: 0;
+        width: 100%;
+    }
+
+        .review-details > span:first-child {
+            width: 35%;
+            display: inline-block;
+        }
+
+        .review-details > span:last-child {
+            width: 63%;
+            display: inline-block;
+        }
+
+    #special-page .rating-inner-dv .col-1 {
+        font-size: 13px;
+        text-align: left;
+        width: 43%;
+    }
+
+    #special-page .rating-inner-dv .col-2 {
+        display: inline-block;
+        width: 55%;
+    }
+
+    .rating-inner-dv img {
+        width: 20px;
+    }
+
+    .college-compare-result-dv > ul li .first.fourth-cols > p {
+        font-size: 13px;
+        width: 40px;
+        word-wrap: break-word;
+    }
+
+    .college-compare-result-dv > ul {
+        overflow-y: scroll;
+    }
+
+    .college-compare-result-dv ul li .fourth.fourth-cols,
+    .college-compare-result-dv ul li .second.fourth-cols,
+    .college-compare-result-dv ul li .third.fourth-cols {
+        min-width: 110px;
+    }
+
+    .google-ad iframe,
+    .google-ad img,
+    .google-ad ins,
+    .google-ad table {
+        width: 100% !important;
+    }
+
+    #details-list .related-dv ul li,
+    .GoogleCode,
+    .footer-menu,
+    .reveal-modal,
+    div.full .jquery-auto-geocoder-map {
+        width: 100%;
+    }
+
+    .voting {
+        margin-top: 10px;
+    }
+
+    .modify_table td {
+        display: block;
+    }
+
+    #dl_Papers td {
+        display: block;
+    }
+
+    #grd_Jobs .jobs_info, #grd_papers .jobs_info {
+        width: 70%;
+    }
+
+    .Content.job_information li {
+        float: left;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+        .Content.job_information li:nth-child(2n+2) {
+            float: left;
+            width: 100%;
+        }
+}

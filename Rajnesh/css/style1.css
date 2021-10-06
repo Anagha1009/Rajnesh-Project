@@ -1,0 +1,2167 @@
+/*-------------------------------------------------------
+[Table of contents]
+
+1. Reset
+	
+2. Generic
+
+3. Typography
+
+4. Form
+
+5. Table
+
+6. Menu
+
+7. Layout
+		
+--------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+
+/*-------------------------------------------------------
+  #Reset Styles
+ -------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+:focus {
+    outline: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+/*table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}*/
+
+caption, th, td {
+    text-align: left;
+    font-weight: 400;
+}
+
+a, audio, canvas, img, video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+/* WebKit browsers */
+*::-webkit-input-placeholder {
+    color: #2f2f2f;
+    opacity: 1;
+}
+
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #2f2f2f;
+    opacity: 1;
+}
+
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #2f2f2f;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #2f2f2f;
+    opacity: 1;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {
+    color: transparent;
+}
+/* FF 4-18 */
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+    color: transparent;
+}
+/* FF 19+ */
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
+    color: transparent;
+}
+/* IE 10+ */
+
+/*-------------------------------------------------------
+ #Generic Styles
+ -------------------------------------------------------*/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.noFloat {
+    float: none;
+}
+
+.hidden {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    max-width: 100%;
+    max-width: none\9;
+    color: #CC0000;
+}
+
+    a:hover, a:focus, a:visited {
+        outline: 0;
+        text-decoration: underline;
+    }
+
+p a, p a:visited {
+    line-height: inherit;
+}
+
+ul, ol {
+    margin: 0;
+    list-style-position: inside;
+}
+
+ul {
+    list-style: none;
+}
+
+    ul li {
+        list-style: none;
+    }
+
+ol {
+    list-style-type: decimal;
+}
+
+    ol ol {
+        list-style: upper-alpha;
+    }
+
+        ol ol ol {
+            list-style: lower-roman;
+        }
+
+            ol ol ol ol {
+                list-style: lower-alpha;
+            }
+
+    ul ul, ol ol, ul ol, ol ul {
+        margin-bottom: 0;
+    }
+
+* {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+/*-------------------------------------------------------
+ #Typography
+ -------------------------------------------------------*/
+
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+    background: url("../images/bg.jpg") repeat-x scroll 0 0 / 100% auto #ffffff;
+    color: #666666;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 { /*Heading Styles*/
+    font-weight: 600;
+    margin: 0;
+}
+
+h1, .h1 {
+    font-size: 2.6em;
+    margin-bottom: 16px;
+    line-height: 1.1em;
+}
+
+h2, .h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    line-height: 1.1em;
+}
+
+h3, .h3 {
+    font-size: 1.8em;
+    margin-bottom: 14px;
+    line-height: 1.1em;
+}
+
+h4, .h4 {
+    font-size: 1.4em;
+    margin-bottom: 13px;
+    line-height: 1.1em;
+}
+
+h5, .h5 {
+    font-size: 1em;
+    margin-bottom: 12px;
+    line-height: 1.1em;
+}
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+    margin-top: 1.5em;
+}
+
+p {
+    margin: 0;
+    line-height: 16px;
+}
+
+    p img {
+        margin: 0;
+    }
+
+img, a img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    image-rendering: optimizeQuality;
+}
+
+em {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+/*-------------------------------------------------------
+ Forms
+ -------------------------------------------------------*/
+
+form {
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+.input-text, input[type="text"], input[type="input"], input[type="password"], input[type="email"], input[type="number"], input[type="url"], input[type="tel"], input[type="search"], textarea, select {
+    border: 1px solid #e1e1e1;
+    padding: 7px;
+    outline: none;
+    color: #000000;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    background: #fff;
+    border-radius: 0px;
+}
+
+    input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="search"]:focus, textarea:focus {
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+        color: #555;
+    }
+
+input[type="submit"], #submit, .button {
+    border-radius: 5px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.1), 0 -2px 0 0 rgba(0, 0, 0, 0.2) inset;
+    cursor: pointer;
+    font-size: 14px;
+    height: 32px;
+    padding: 0;
+    width: 100px;
+    background: #CC0000;
+    color: #fff;
+    border: none;
+}
+
+    input[type="submit"]:hover, #submit:hover, .button:hover {
+        background: #3ba8cf;
+    }
+
+textarea {
+    min-height: 60px;
+    line-height: 1.5em;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+legend {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+select {
+    width: 100%;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    display: inline;
+}
+
+label span, legend span {
+    font-weight: normal;
+    font-size: 13px;
+    color: #444;
+}
+
+textarea {
+    width: 100%;
+}
+
+/*------------------------------------------------------- 
+ #Table
+ -------------------------------------------------------*/
+/*table {
+    width: 100%;
+    padding: 0;
+   margin: 0 0 20px 0;
+    font-size: 13px;
+}*/
+
+table caption {
+    padding: 0 0 5px 0;
+    width: auto;
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+}
+
+th {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 9px 12px;
+    /*border-style: solid;*/
+    border-width: 1px;
+    border-left: none;
+    border-top: none;
+}
+
+td {
+    font-size: 13px;
+    padding: 5px 0px;
+    /*border-style: solid;*/
+    border-width: 1px;
+    border-left: none;
+    border-top: none;
+}
+
+.pagelinks > td {
+    float: right;
+}
+
+tr th:first-child, tr td:first-child {
+    /*border-left-style: solid;
+	border-left-width: 1px;*/
+}
+
+tr:first-child th, tr:first-child td {
+    /*border-top-style: solid;
+	border-top-width: 1px;*/
+}
+
+/*------------------------------------------------------- 
+  Menu Styles
+ -------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------- 
+ #Layout Styles
+ -------------------------------------------------------*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: auto; /* real browsers */
+    height: 100%; /* IE6: treaded as min-height*/
+    min-height: 100%; /* real browsers */
+    margin: 0 auto; /* center, not in IE5 */
+    position: relative; /* needed for footer positioning*/
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.red {
+    color: #CC0000;
+}
+
+.bg-red {
+    background: #CC0000;
+    color: #ffffff;
+}
+
+.clr {
+    clear: both;
+    margin-top: 10px;
+}
+/*============== Header ========================*/
+#header {
+    background: none repeat scroll 0 0 #ffffff;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -o-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 20px 15px;
+    width: 100%;
+}
+
+.logo,
+.social-icon,
+.google-search {
+    display: inline-block;
+}
+
+.logo {
+    width: 300px;
+}
+.logo a {
+    color: #444;
+}
+.logo a:hover {
+    text-decoration: none;
+     color: #cc0000;
+}
+.logo a:hover .red{
+    color: #444;
+}
+
+    .logo h1 {
+        color: #444444;
+        font-family: Ubuntu;
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+.social-icon {
+    display: inline-block;
+    height: 39px;
+    line-height: 19px;
+    margin: 10px 0 0;
+    text-align: center;
+    width: 300px;
+}
+
+    .social-icon li {
+        display: inline-block;
+    }
+
+        .social-icon li iframe {
+            height: 35px;
+            vertical-align: text-top;
+            width: 90px;
+        }
+
+/*.social-icon div {
+        vertical-align: middle !important;
+    }*/
+
+.google-search {
+    background: none repeat scroll 0 0 #efefef;
+    padding: 5px;
+    width: 356px;
+}
+
+    .google-search .txtbox {
+        background: url("../images/google_custom_search_watermark.gif") no-repeat scroll 5px 50% #ffffff;
+        border: 1px solid #7e9db9;
+        float: left;
+        padding: 7px;
+        margin-bottom: 0;
+        width: 240px;
+        margin-right: 5px;
+    }
+
+        .google-search .txtbox:focus {
+            background: #ffffff;
+        }
+
+    .google-search .btnSubmit {
+    }
+/*============== Header End ====================*/
+/*============== Menu CSS ======================*/
+/*#menu {
+    background: none repeat scroll 0 0 #cc0000;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+#menu ul li {
+    border-right: 1px solid #cccccc;
+    float: left;
+    height: 35px;
+    padding: 10px 12px;
+}
+#menu ul li:hover{
+	background: #3BA8CF;
+}
+#menu ul li a {
+    color: #ffffff;
+    font-weight: bold;
+}
+#menu ul li a:hover,
+#menu ul li a:focus{
+	text-decoration: none;
+}*/
+/*============== Menu CSS end ==================*/
+/*============== Content CSS =======================*/
+#content {
+    background: none repeat scroll 0 0 #ffffff;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 20px 10px;
+    width: 100%;
+    border-radius: 0px;
+}
+
+.slider {
+    display: inline-block;
+    margin-right: 9px;
+    width: 483px;
+}
+
+.box {
+    border: 1px solid #cc0000;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: inline-block;
+    width: 484px;
+}
+.Colleges-in-India.box,
+.Courses-in-India.box,
+.Schools-in-India.box,
+.Exams-in-India.box{
+/*    border:none;*/
+}
+.Colleges-in-India.box .content {
+    padding-bottom: 22px;
+}
+.Courses-in-India.box,
+.Exams-in-India.box {
+    margin-left: 8px;
+}
+    .box .heading {
+        background: none repeat scroll 0 0 #cc0000;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: #ffffff;
+        line-height: 24px;
+        padding: 5px 10px;
+    }
+
+        .box .heading > img {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .box .heading > a {
+            color: #ffffff;
+            font-family: ubuntu;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+
+    .box > ul {
+        padding: 8px;
+    }
+
+    .box li {
+        /*border-bottom: 1px solid #777777;*/
+        display: inline-table;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+.default_box li {
+    /*border-bottom: 1px solid #777777;
+        display: inline-table;*/
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.news.box ul li img{
+    float: left;
+}
+.box ul li img {
+    border: 1px solid #cccccc;
+    height: 72px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 72px;
+}
+
+.box ul li a {
+    color: #cc0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.news.box ul li a {
+ /*   display: table-cell; */
+}
+
+
+
+.box ul li:last-child {
+    border: medium none;
+    margin-bottom: 0;
+}
+
+/*#dl_Category td {
+    background: none repeat scroll 0 0 #fff3d6;
+    border: 1px solid #cc0000;
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+}*/
+.box .content {
+    background: none repeat scroll 0 0 #fff3d6;
+    padding: 12px;
+}
+
+    .box .content p {
+        margin: 0;
+        text-align: justify;
+    }
+
+    .box .content img {
+        float: left;
+        margin-right: 10px;
+    }
+
+    .box .content > ul {
+        margin-top: 15px;
+    }
+
+.colleges-in-india li,
+.courses-in-india li,
+.schools-in-india li,
+.exams-in-india li {
+    border-bottom: medium none;
+    line-height: 20px;
+    padding-bottom: 0;
+}
+
+.colleges-in-india.box,
+.schools-in-india.box {
+    margin-right: 8px;
+    width: 484px;
+}
+
+.courses-in-india.box,
+.exams-in-india.box {
+    width: 484px;
+}
+
+.round-arrow-bullet {
+    background: url(../images/bullets.png) no-repeat scroll left center;
+    padding-left: 30px;
+}
+
+.carousel > ul {
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.universities {
+    margin-top: 25px;
+}
+
+.carousel li {
+    display: inline-block;
+    text-align: center;
+    width: 190px;
+}
+
+.carousel > h2 {
+    background: none repeat scroll 0 0 #cc0000;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -o-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    font-family: ubuntu;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 5px 12px;
+}
+
+.social-icon > ul > li:nth-of-type(1) div {
+    vertical-align: middle !important;
+}
+
+.carousel .image-dv {
+    border: 1px solid #cccccc;
+    height: 80px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 80px;
+    display: table;
+}
+.carousel .image-dv .image-dv-inner {
+    box-sizing: border-box;
+    display: table-cell;
+    height: 80px;
+    vertical-align: middle;
+    width: 80px;
+    max-width: 80px;
+
+}
+.carousel a {
+    font-weight: bold;
+}
+
+.institutes.carousel li,
+.schools.carousel li {
+    width: 158px;
+}
+
+.carousel.institutes .image-dv {
+    height: 90px;
+}
+
+.most-search-queries {
+    border: 1px solid #cc0000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    padding: 10px 0 20px;
+    text-align: center;
+}
+
+    .most-search-queries > h2 {
+        border-bottom: 1px solid #cccccc;
+        color: #cc0000;
+        font-family: ubuntu;
+        font-size: 20px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+
+    .most-search-queries a {
+        font-weight: bold;
+    }
+
+    .most-search-queries li {
+        display: inline-block;
+    }
+
+        .most-search-queries li a {
+            border-right: 1px solid #cccccc;
+            padding: 0 7px;
+        }
+
+        .most-search-queries li:first-child {
+            padding-left: 0;
+        }
+
+        .most-search-queries li:last-child a {
+            padding-right: 0;
+            border: none;
+        }
+/*============== Content CSS End =======================*/
+
+#footer {
+    background: none repeat scroll 0 0 #ffffff;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -o-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -o-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 0 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-menu {
+    margin: 0 auto;
+    width: 800px;
+}
+
+    .footer-menu li {
+        display: inline-block;
+    }
+
+    .footer-menu ul li:first-child a {
+        padding-left: 0;
+    }
+
+    .footer-menu a {
+        border-right: 1px solid #cccccc;
+        font-weight: bold;
+        padding: 0 5px;
+    }
+
+    .footer-menu ul li:last-child a {
+        border: medium none;
+        padding-right: 0;
+    }
+
+.copyright-text {
+    margin-top: 8px;
+}
+
+.google-ad {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid #777777;
+    display: table;
+    height: auto;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    vertical-align: middle;
+    min-height: 40px;
+}
+.google-ad.linkunitads {
+  display: table-cell;
+  height: 40px;
+  border: none;
+}
+/*.google-ad ins, .google-ad iframe, .google-ad table, .google-ad img {
+        width: 100% !important;
+    }*/
+
+#footer .google-ad {
+    margin-top: 0;
+}
+
+#footer .footer-divider {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.google-ad > p {
+    display: table-cell;
+    font-size: 25px;
+    vertical-align: middle;
+    line-height: 25px;
+}
+/*=========== College in India ==================*/
+.bread-cumb {
+    background: none repeat scroll 0 0 #ffffff;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px;
+}
+
+    .bread-cumb li {
+        display: inline;
+    }
+
+    .bread-cumb ul li a {
+        border-right: 1px solid #777777;
+        margin-right: 4px;
+        padding-right: 6px;
+    }
+
+.inner-page .box {
+    width: 100%;
+}
+
+.box-content .search .course-type,
+.box-content .search .college-location,
+.box-content .search .school-type,
+.box-content .search .school-location {
+    display: inline-block;
+    margin-right: 10px;
+    width: 330px;
+}
+
+.search {
+    display: block;
+    width: 100%;
+}
+
+.box-content .search .search-btn {
+    display: inline-block;
+    width: 12%;
+}
+
+.list li {
+    border-bottom: 0 none;
+    display: inline-table;
+    width: 33%;
+}
+
+.filter li {
+    width: 32%;
+}
+
+.box-content {
+    padding: 10px;
+}
+
+    .box-content .searchc {
+        margin-bottom: 10px;
+    }
+
+.height-10 {
+    height: 10px;
+}
+
+.box-content .college-compare {
+    background: none repeat scroll 0 0 #f4f4f4;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #cccccc;
+    padding: 10px;
+}
+
+    .box-content .college-compare h2 {
+        font-size: 14px;
+    }
+
+    .box-content .college-compare .course-type {
+        width: 32%;
+    }
+
+.pagination li {
+    display: inline-block;
+    text-align: center;
+    width: 19px;
+}
+
+.pagination {
+    float: right;
+    width: auto;
+    margin-top: 5px;
+}
+
+.pagelinks td {
+    padding: 5px 3px;
+}
+.box .pagination a.active,
+.box .pagination a:hover {
+    background: none repeat scroll 0 0 #cc0000;
+    color: #ffffff;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.inner-page .box li {
+    border: medium none;
+}
+
+.detail-list ul li img {
+    float: left;
+    height: 110px;
+    max-height: 110px;
+    max-width: 110px;
+    width: 110px;
+}
+
+.detail-list table tr td img {
+    float: left;
+    height: 110px;
+    max-height: 110px;
+    max-width: 110px;
+    width: 110px;
+}
+
+.left-side {
+    width: 810px;
+    display: inline-block;
+}
+
+.google-ad.square {
+    display: inline-table;
+    height: 200px;
+    width: 335px;
+    margin-top: 0;
+}
+
+.voting {
+    border: 1px solid #cccccc;
+    border-radius: 7px;
+    display: inline-block;
+    padding: 7px;
+    width: 100%;
+}
+
+    .voting > p {
+        display: table-cell;
+        font-size: 25px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+.rating {
+    display: inline-block;
+    width: 475px;
+}
+
+#score {
+    display: inline-table;
+    vertical-align: middle;
+}
+
+.rating-text {
+    color: #444444;
+    display: inline-table;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.social-share {
+    display: inline-block;
+    text-align: right;
+    width: 308px;
+}
+
+.right-side {
+    display: inline-block;
+    float: right;
+    width: 160px;
+}
+
+.google-ad.verticle {
+    height: 500px;
+    border: none;
+}
+
+.voting .heading {
+    background: none repeat scroll 0 0 #cc0000;
+    padding: 5px;
+}
+
+    .voting .heading > h2 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .voting .heading img {
+        display: inline-table;
+        margin-right: 5px;
+    }
+
+.select-option {
+    padding: 7px;
+}
+
+    .select-option li {
+        display: table;
+        height: 100%;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+    .voting .select-option td {
+    padding: 0;
+    text-align: center;
+}
+    .voting .select-option input {
+    float: left;
+    width: auto;
+	}
+    .select-option input {
+        display: table-cell;
+        /*margin-top: 19px;*/
+    }
+    .voting .select-option label {
+    float: left;
+    width: 70%;
+}
+    .select-option label {
+        display: inline-block;
+        font-size: 14px;
+        position: relative;
+        /*width: 100%;*/
+        margin-left: 6px;
+        vertical-align: middle;
+    }
+
+
+
+    .select-option img {
+        border: 1px solid #cccccc;
+        margin-right: 10px;
+        padding: 2px;
+        width: 70px;
+    }
+
+    .select-option li:last-child {
+        border-top: 1px solid #cccccc;
+        padding-top: 5px;
+    }
+
+
+    .select-option tr:last-child {
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 5px;
+    }
+
+    .select-option tr {
+        display: table;
+        height: 100%;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+.voting .select-option input[type="submit"] {
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+.next-vote {
+    background: none repeat scroll 0 0 #efefef;
+    display: inline-block;
+    margin-top: 6px;
+    padding: 5px 8px;
+}
+
+    .next-vote > p {
+        display: inline;
+        font-size: 15px;
+        line-height: 32px;
+        margin-right: 18px;
+    }
+/*============================= Inner Page Comment Box Tabs =====================*/
+/* Tabs container */
+.comment-box-tabs {
+    background: none repeat scroll 0 0 #cccccc;
+    display: block;
+    padding: 25px;
+}
+
+    .comment-box-tabs .r-tabs {
+        position: relative;
+        /*background-color: #00c5ad;
+    border-top: 1px solid #00c5ad;
+    border-right: 1px solid #00c5ad;
+    border-left: 1px solid #00c5ad;
+    border-bottom: 4px solid #00c5ad;
+    border-radius: 4px;*/
+    }
+
+        /* Tab element */
+        .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-tab {
+            position: relative;
+        }
+
+        /* Tab anchor */
+        .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-anchor {
+            /*background: none repeat scroll 0 0 #0e3b6c;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 33px;
+    text-decoration: none;*/
+            background: linear-gradient(to bottom, #ffffff, #dddddd) repeat scroll 0 0 #dddddd;
+            border-radius: 5px 0 0;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+            color: #444444;
+            float: left;
+            font-family: Trebuchet MS;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 1em 3.5em;
+            position: relative;
+            text-decoration: none;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+        }
+        /* Disabled tab */
+        .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-state-disabled {
+            opacity: 0.5;
+        }
+
+        /* Active state tab anchor */
+        .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+            /*background-color: #c3ceda;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #000000;
+    text-shadow: none;*/
+            background: none repeat scroll 0 0 #ffffff;
+            z-index: 3;
+            box-shadow: none;
+        }
+
+            .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor:after {
+                /*background-color: #c3ceda;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #000000;
+    text-shadow: none;*/
+                background: none repeat scroll 0 0 #ffffff;
+                z-index: 3;
+                box-shadow: none;
+            }
+
+        .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-anchor:after {
+            background: linear-gradient(to bottom, #ffffff, #dddddd) repeat scroll 0 0 #dddddd;
+            border-radius: 0 5px 0 0;
+            bottom: 0;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+            content: "";
+            position: absolute;
+            right: -0.5em;
+            top: 0;
+            transform: skew(10deg);
+            width: 1em;
+            z-index: 1;
+        }
+        /* Tab panel */
+        .comment-box-tabs .r-tabs .r-tabs-panel {
+            /*background-color: #F7F9FA;
+    border-bottom: 4px solid white;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border:1px solid #c5d0dc;
+    border-radius: 12px;*/
+            background: none repeat scroll 0 0 #ffffff;
+            border-radius: 0 5px 5px;
+            box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.5);
+            min-height: 240px;
+            padding: 2em;
+            position: relative;
+            z-index: 2;
+            margin-top: -1px;
+        }
+        /* Accordion anchor */
+        .comment-box-tabs .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+            display: block;
+            padding: 10px;
+            background-color: #00c5ad;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+
+        /* Active accordion anchor */
+        .comment-box-tabs .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+            background-color: #fff;
+            color: #00c5ad;
+            text-shadow: none;
+        }
+
+        /* Disabled accordion button */
+        .comment-box-tabs .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+            opacity: 0.5;
+        }
+
+        .comment-box-tabs .r-tabs .r-tabs-nav {
+            margin: 0;
+            padding: 0;
+        }
+
+        .comment-box-tabs .r-tabs .r-tabs-tab {
+            display: inline-block;
+            margin: 0;
+            list-style: none;
+        }
+
+        .comment-box-tabs .r-tabs .r-tabs-panel {
+            display: none;
+        }
+
+        .comment-box-tabs .r-tabs .r-tabs-accordion-title {
+            display: none;
+        }
+
+        .comment-box-tabs .r-tabs .r-tabs-panel.r-tabs-state-active {
+            display: block;
+        }
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 767px) {
+    /*.comment-box-tabs .r-tabs .r-tabs-nav {
+        display: none;
+    }
+    .comment-box-tabs .r-tabs .r-tabs-accordion-title {
+        display: block;
+        margin-bottom: 2px;
+    }
+    .comment-box-tabs .r-tabs .r-tabs-accordion-title .r-tabs-anchor{
+        border-radius: 0px;
+    }*/
+
+
+    .select-option label {
+        line-height: 15px;
+    }
+
+    .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-anchor {
+        padding: 8px;
+        font-size: 13px;
+        transform: none;
+    }
+}
+
+.col-1 {
+    display: inline-block;
+    margin-right: 10px;
+    width: 49%;
+}
+
+.col-2 {
+    display: inline-block;
+    width: 49%;
+}
+
+    .col-1 > li,
+    .col-2 > li {
+        margin-bottom: 10px;
+    }
+
+.col-1 label {
+    color: #444444;
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+    width: 60px;
+}
+
+.col-1 input {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 270px;
+}
+
+.col-2 label {
+    color: #444444;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.col-2 textarea {
+    border-radius: 5px;
+    height: 95px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#courses-in-india-page .filter-result .detail-list li:nth-of-type(2n) {
+    background: #eee;
+}
+#courses-in-india-page .filter-result .detail-list .pagination li {
+    background: none;
+}
+#courses-in-india-page .filter-result .detail-list li {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#courses-in-india-page .filter-result .detail-list li a {
+    line-height: 25px;
+}
+#colleges-in-india-page .top-colleges-in-india .box-content .college-compare {
+    background: none repeat scroll 0 0 #ffffff;
+}
+/*============================= Inner Page Comment Box Tabs =====================*/
+/*=========== College in India CSS ==============*/
+/*================== Inner List Page ======================*/
+#inner-list-page .box .pagination li {
+    border: medium none;
+    box-shadow: none;
+}
+
+#inner-list-page .box li {
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #aaa;
+}
+
+#inner-list-page .box ul li img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#inner-list-page .box li:hover {
+    background: #EEEEEE;
+    cursor: pointer;
+}
+
+.quiz-box {
+    background: url("../images/logo_back.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 225px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    width: 400px;
+}
+
+    .quiz-box > p {
+        color: #ffffff;
+        font-family: ubuntu;
+        font-size: 20px;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+/*================== Inner List page end ==================*/
+/*================== Details Page =====================*/
+#details-page .box ul li.college-logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 170px;
+    max-height: 170px;
+}
+
+#details-page .box ul li.college-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 270px;
+    max-height: 150px;
+}
+
+#details-page .box ul li {
+    display: inline-block;
+}
+
+    #details-page .box ul li.college-logo {
+        width: 180px;
+    }
+
+    #details-page .box ul li.college-detail {
+        width: 300px;
+        margin-right: 10px;
+    }
+
+#details-page .social-share {
+    text-align: left;
+}
+
+#details-page .box ul li.college-image {
+    width: 290px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#details-page .box ul.info {
+    display: table;
+}
+
+#details-page .rating {
+    background: none repeat scroll 0 0 #efefef;
+    padding: 10px;
+    width: 100%;
+}
+
+    #details-page .rating ul li img {
+        border: medium none;
+        height: 100%;
+        margin-right: 0;
+        padding: 0;
+        width: auto;
+    }
+
+#details-page .box .rating ul li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+    #details-page .box .rating ul li:nth-child(2) {
+        text-align: center;
+        width: 175px;
+    }
+
+    #details-page .box .rating ul li:last-child {
+        text-align: center;
+        width: 175px;
+    }
+
+    #details-page .box .rating ul li:first-child {
+        width: 406px;
+    }
+
+    #details-page .box .rating ul li a {
+        font-size: 16px;
+    }
+
+#details-page .box .rating ul {
+    display: table;
+}
+
+#details-page .box .details-page-tab #photos ul li {
+    display: inline-block;
+    width: 250px;
+}
+
+    #details-page .box .details-page-tab #photos ul li img {
+        height: 100%;
+        width: 100%;
+    }
+
+#details-page .box .details-page-tab #videos ul li {
+    display: inline-block;
+    width: 375px;
+}
+
+.need-edu-loan {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    line-height: 45px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    text-align: center;
+    width: 400px;
+}
+
+    .need-edu-loan a {
+        background: none repeat scroll 0 0 #cc0000;
+        border-radius: 5px;
+        color: #ffffff;
+        display: block;
+        font-family: ubuntu;
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+    }
+
+.related-dv .heading p {
+    color: #ffffff;
+    font-family: ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.related-dv {
+    border: 1px solid #cccccc;
+    border-radius: 11px;
+}
+#details-list .related-dv{
+    margin-top: 10px;
+}
+#details-list .related-dv ul li {
+  width: 33%;
+  display: inline-block;
+}
+.related-dv > ul {
+    padding: 10px;
+}
+/*================== Details Page End =====================*/
+/*============================= Details Page Tabs =====================*/
+/* Tabs container */
+.details-page-tab .r-tabs {
+    position: relative;
+    /*background-color: #00c5ad;
+    border-top: 1px solid #00c5ad;
+    border-right: 1px solid #00c5ad;
+    border-left: 1px solid #00c5ad;
+    border-bottom: 4px solid #00c5ad;
+    border-radius: 4px;*/
+}
+
+    /* Tab element */
+    .details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab {
+        position: relative;
+    }
+
+        .details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab:last-child {
+            float: right;
+        }
+
+            .details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab:last-child .r-tabs-anchor {
+                background: none repeat scroll 0 0 #3ba8cf;
+                border-radius: 0;
+                position: relative;
+                top: -1px;
+            }
+
+                .details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab:last-child .r-tabs-anchor:hover {
+                    background: none repeat scroll 0 0 #CC0000;
+                    cursor: pointer;
+                }
+    /* Tab anchor */
+    .details-page-tab .r-tabs .r-tabs-nav .r-tabs-anchor {
+        background: none repeat scroll 0 0 #CC0000;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 5px 8px;
+        text-decoration: none;
+    }
+
+    /* Disabled tab */
+    .details-page-tab .r-tabs .r-tabs-nav .r-tabs-state-disabled {
+        opacity: 0.5;
+    }
+
+    /* Active state tab anchor */
+    .details-page-tab .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+        background-color: #dddddd;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        color: #444;
+        text-shadow: none;
+    }
+
+    /* Tab panel */
+    .details-page-tab .r-tabs .r-tabs-panel {
+        background-color: #F7F9FA;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        border: 1px solid #cccccc;
+        padding: 15px;
+        display: none;
+    }
+
+        .details-page-tab .r-tabs .r-tabs-panel p {
+            color: #444444;
+            font-size: 15px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+    /* Accordion anchor */
+    .details-page-tab .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+        display: block;
+        padding: 10px;
+        background-color: #00c5ad;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+        font-size: 14px;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+
+    /* Active accordion anchor */
+    .details-page-tab .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+        background-color: #fff;
+        color: #00c5ad;
+        text-shadow: none;
+    }
+
+    /* Disabled accordion button */
+    .details-page-tab .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+        opacity: 0.5;
+    }
+
+    .details-page-tab .r-tabs .r-tabs-nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    .details-page-tab .r-tabs .r-tabs-tab {
+        display: inline-block;
+        margin: 0;
+        list-style: none;
+        width: auto;
+        padding-bottom: 0;
+        margin-left: -1px;
+        line-height: 22px;
+    }
+
+        .details-page-tab .r-tabs .r-tabs-tab:first-child {
+            margin-left: 0;
+        }
+
+    .details-page-tab .r-tabs .r-tabs-accordion-title {
+        display: none;
+    }
+
+    .details-page-tab .r-tabs .r-tabs-panel.r-tabs-state-active {
+        display: block;
+    }
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .details-page-tab .r-tabs .r-tabs-nav .r-tabs-anchor {
+        padding: 5px;
+    }
+}
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 767px) {
+    .details-page-tab .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .details-page-tab .r-tabs .r-tabs-accordion-title {
+        display: block;
+        margin-bottom: 2px;
+    }
+
+        .details-page-tab .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+            border-radius: 0px;
+        }
+
+    .details-page-tab .r-tabs .r-tabs-accordion-title {
+        border: 1px solid #cccccc;
+        margin-bottom: -1px;
+    }
+}
+/*============================= Details page Tabs End=====================*/
+
+/*============================= Details Page Tab New =====================*/
+.details-page-tab {display: inline-block; width: 100%;}
+.details-page-tab .tab-section{margin:0 0 2px 0; display:block; text-align:left;}
+.details-page-tab .tab-section li {display: inline-block; float: left; margin: 0 2px 0 0; padding: 0; width: auto; }
+.details-page-tab .tab-section li a{padding:5px 6px; font-size:12px; font-family: Arial,Helvetica,sans-serif; font-weight:700; display:block; background:#cc0000; color:#ffffff; width:auto; text-align:center; border-radius: 7px 7px 0 0;}
+.details-page-tab .tab-section li a:hover,
+.details-page-tab .tab-section li a.active{background:#ddd; color: #444; text-decoration: none;}
+.tab-section-inner-wrapper {display: inline-block; border: 1px solid #ddd; width: 100%; }
+.details-page-tab .tab-content-inner {background: none repeat scroll 0 0 #fff; border-bottom: 1px solid #ddd; box-sizing: border-box; display: block; float: left; padding: 15px; text-align: left; width: 100%; }
+.details-page-tab .tab-content-inner.active{display:block;}
+.details-page-tab .tab-section li.college-compare-tab {float: right; }
+.details-page-tab .tab-section li.college-compare-tab a {background: none repeat scroll 0 0 #3ba8cf; border-radius: 0; margin-top: -1px; }
+.details-page-tab .tab-section li.college-compare-tab a:hover {background: none repeat scroll 0 0 #cc0000; color: #FFF; }
+.details-page-tab .tab-content-inner h1 {font-size: 18px; margin-top: 0; }
+/*============================= Details page Tabs new End=====================*/
+
+/*============================= Reviews Page ============================*/
+#special-page .left-side {
+    display: inline-block;
+    width: 268px;
+    margin-right: 7px;
+}
+
+#special-page .right-side {
+    display: inline-block;
+    float: none;
+    width: 700px;
+}
+
+.reviews-logo {
+    background: url("../images/logo_back.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 225px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+    .reviews-logo > a {
+        display: block;
+        width: 100%;
+    }
+
+    .reviews-logo span {
+        color: #ffffff;
+        display: block;
+        font-family: ubuntu;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+#special-page .box .heading p {
+    color: #ffffff;
+    font-family: ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+#special-page .box .box-content p {
+    color: #3BA8CF;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.review-details {
+    display: table;
+    padding: 0 25px;
+    width: 100%;
+}
+
+    .review-details > span:first-child {
+        display: table-cell;
+        font-size: 13px;
+        font-weight: bold;
+        vertical-align: middle;
+        width: 143px;
+    }
+
+    .review-details > span:last-child {
+        display: inline-table;
+        width: 300px;
+    }
+
+    .review-details input {
+        display: inline-block;
+        float: left;
+    }
+
+#special-page .box label {
+    display: table-cell;
+    float: left;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#special-page .rating {
+    width: 100%;
+}
+
+.box .sub-heading {
+    background: none repeat scroll 0 0 #3ba8cf;
+    border-radius: 0;
+    color: #ffffff;
+    font-family: ubuntu;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    padding: 5px 10px;
+}
+
+#special-page .box .rating p.sub-title {
+    color: #cc0000;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.rating-inner-dv {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+#special-page .rating-inner-dv .col-1 {
+    color: #000000;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-right: 0;
+    vertical-align: middle;
+    width: 25%;
+}
+
+#special-page .rating-inner-dv .col-2 {
+    display: inline-block;
+    width: 74%;
+}
+
+.captcha-code {
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+#special-page .captcha-code > p {
+    color: #777777;
+    font-weight: normal;
+}
+
+body.special-page-bg {
+    background: url("../images/review-page-bg.jpg") repeat-y scroll 0 0 / 100% auto #ffffff;
+}
+
+.Tips {
+    background: none repeat scroll 0 0 #3ba8cf;
+    padding: 10px 15px 10px 30px;
+}
+
+    .Tips li {
+        color: #ffffff;
+        font-size: 15px;
+        font-family: ubuntu;
+        line-height: 24px;
+        list-style-position: outside;
+        list-style-type: disc;
+    }
+
+.personal-details {
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+    .personal-details .col-1 {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 30px;
+        width: 24%;
+    }
+
+.col-2 {
+    display: inline-block;
+    width: 49%;
+}
+
+.req-edu-loan {
+    border: 1px solid #cccccc;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+}
+
+#special-page .box .box-content .req-edu-loan > p {
+    color: #444444;
+    float: left;
+    font-size: 13px;
+}
+
+.req-edu-loan input {
+    float: left;
+    margin-right: 8px;
+}
+
+.comment-dv {
+    border: 1px solid #cccccc;
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+}
+
+.personal-details .day,
+.personal-details .month {
+    display: inline-block;
+    width: 32%;
+}
+
+.personal-details .year {
+    display: inline-block;
+    width: 33%;
+}
+/*============================= Reviews Page ============================*/
+
+
+/*============================= Ratings ============================*/
+.Ratingleft {
+    float: left;
+    padding-right: 10px;
+}
+
+.FilledStarCss {
+    background-image: url("../images/filledstar.png");
+    height: 32px;
+    width: 32px;
+}
+
+.StarCss {
+    /*background-image: url("../images/star.png");*/
+    height: 32px;
+    width: 32px;
+}
+
+.EmptyStarCss {
+    background-image: url("../images/star.png");
+    height: 32px;
+    width: 32px;
+}
+/*============================= Ratings ============================*/
+
+.reveal-modal {
+    width: 100%;
+}
+.reveal-modal .btn_Compete {
+    border: 1px solid #a1a1a1;
+    box-shadow: none;
+    font-size: 13px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.pagelinks span {
+    background-color: #cc0000;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    padding: 3px 7px;
+}
+
+/*=============== College Compare Result ====================*/
+#compare-result-page .box-content {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+
+#compare-result-page .box .heading > p {
+    color: #ffffff;
+    font-family: ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.college-compare-result-dv {
+    display: inline-block;
+    float: left;
+    width: 100%;
+}
+
+    .college-compare-result-dv ul li:nth-of-type(2n+1) {
+        background: none repeat scroll 0 0 #efefef;
+    }
+
+    .college-compare-result-dv ul li {
+        display: table;
+        float: left;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+        .college-compare-result-dv ul li:nth-of-type(2n+1) .fourth-cols {
+            background: none repeat scroll 0 0 #efefef;
+        }
+
+        .college-compare-result-dv ul li .fourth-cols {
+            border-right: 3px solid #fff;
+            display: table-cell;
+            overflow: hidden;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .college-compare-result-dv ul li .first.fourth-cols {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .college-compare-result-dv ul li .first.fourth-cols {
+            width: 22%;
+        }
+
+        .college-compare-result-dv ul li .second.fourth-cols,
+        .college-compare-result-dv ul li .third.fourth-cols,
+        .college-compare-result-dv ul li .fourth.fourth-cols {
+            width: 26%;
+        }
+
+        .college-compare-result-dv ul li.fifth-row .second.fourth-cols p,
+        .college-compare-result-dv ul li.fifth-row .third.fourth-cols p,
+        .college-compare-result-dv ul li.fifth-row .fourth.fourth-cols p {
+            text-align: justify;
+        }
+
+        .college-compare-result-dv ul li.third-row .second.fourth-cols,
+        .college-compare-result-dv ul li.third-row .third.fourth-cols,
+        .college-compare-result-dv ul li.third-row .fourth.fourth-cols {
+            text-align: left;
+        }
+
+        .college-compare-result-dv ul li.first-row .fourth-cols img {
+            margin-right: 0;
+        }
+
+#pnllist > ul > span {
+    float: right;
+}
+div.full .jquery-auto-geocoder-map{
+    width: 390px;
+}

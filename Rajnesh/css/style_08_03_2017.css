@@ -1,0 +1,1827 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic);
+a,
+ins {
+    text-decoration: none
+}
+.clearfix,
+.clearfix:after,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+label,
+legend,
+menu,
+nav,
+section {
+    display: block
+}
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: top
+}
+em,
+table caption {
+    font-style: italic
+}
+:focus {
+    outline: 0
+}
+ol,
+ul {
+    list-style: none inside;
+    margin: 0
+}
+blockquote,
+q {
+    quotes: none
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+del {
+    text-decoration: line-through
+}
+caption,
+td,
+th {
+    text-align: left;
+    font-weight: 400
+}
+a,
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+::-webkit-input-placeholder {
+    color: #2f2f2f;
+    opacity: 1
+}
+:-moz-placeholder {
+    color: #2f2f2f;
+    opacity: 1
+}
+::-moz-placeholder {
+    color: #2f2f2f;
+    opacity: 1
+}
+:-ms-input-placeholder {
+    color: #2f2f2f;
+    opacity: 1
+}
+.comment-box-tabs .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled,
+.comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-state-disabled,
+.details-page-tab .r-tabs .r-tabs-accordion-title.r-tabs-state-disabled,
+.details-page-tab .r-tabs .r-tabs-nav .r-tabs-state-disabled {
+    opacity: .5
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
+    color: transparent
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: transparent
+}
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
+    color: transparent
+}
+.left {
+    float: left
+}
+.pagelinks>td,
+.right {
+    float: right
+}
+.clearfix:after {
+    content: ".";
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+* html .clearfix {
+    height: 1%
+}
+.noFloat {
+    float: none
+}
+.hidden {
+    position: absolute;
+    top: 0;
+    visibility: hidden
+}
+#container,
+.comment-box-tabs .r-tabs,
+.comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-tab,
+.select-option label {
+    position: relative
+}
+.pointer {
+    cursor: pointer
+}
+a {
+    outline: 0;
+    max-width: 100%;
+    max-width: none\9;
+    color: #C00
+}
+a:focus,
+a:hover,
+a:visited {
+    outline: 0;
+    text-decoration: underline
+}
+p a,
+p a:visited {
+    line-height: inherit
+}
+ul,
+ul li {
+    list-style: none
+}
+ol {
+    list-style-type: decimal
+}
+ol ol {
+    list-style: upper-alpha
+}
+ol ol ol {
+    list-style: lower-roman
+}
+ol ol ol ol {
+    list-style: lower-alpha
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0
+}
+* {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    box-sizing: border-box
+}
+body {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+    background: url(../images/bg.jpg) 0 0/100% auto repeat-x #fff;
+    color: #666
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.1em
+}
+.h1,
+.h2,
+.h3,
+.h4,
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    margin: 0
+}
+b,
+label,
+strong {
+    font-weight: 700
+}
+.h1,
+h1 {
+    font-size: 2.6em;
+    margin-bottom: 16px
+}
+.h2,
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px
+}
+.h3,
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 14px
+}
+.h4,
+h4 {
+    font-size: 1.4em;
+    margin-bottom: 13px
+}
+.h5,
+h5 {
+    font-size: 1em;
+    margin-bottom: 12px
+}
+p+h1,
+p+h2,
+p+h3,
+p+h4,
+p+h5,
+p+h6 {
+    margin-top: 1.5em
+}
+p,
+p img {
+    margin: 0
+}
+p {
+    line-height: 16px
+}
+a img,
+img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    image-rendering: optimizeQuality
+}
+small {
+    font-size: 80%
+}
+fieldset {
+    margin-bottom: 20px
+}
+.input-text,
+input[type=text],
+input[type=input],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=url],
+input[type=tel],
+input[type=search],
+select,
+textarea {
+    border: 1px solid #e1e1e1;
+    padding: 7px;
+    outline: 0;
+    color: #000;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    background: #fff;
+    border-radius: 0
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type=search]:focus,
+textarea:focus {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+    color: #555
+}
+#submit,
+.button,
+input[type=submit] {
+    border-radius: 5px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, .1), 0 -2px 0 0 rgba(0, 0, 0, .2) inset;
+    cursor: pointer;
+    font-size: 14px;
+    height: 32px;
+    padding: 0;
+    width: 100px;
+    background: #C00;
+    color: #fff;
+    border: none
+}
+#container,
+body,
+html,
+select,
+textarea {
+    width: 100%
+}
+#submit:hover,
+.button:hover,
+input[type=submit]:hover {
+    background: #3ba8cf
+}
+textarea {
+    min-height: 60px;
+    line-height: 1.5em
+}
+label {
+    font-size: 12px
+}
+legend {
+    font-weight: 400;
+    font-size: 15px
+}
+input[type=checkbox],
+input[type=radio] {
+    display: inline
+}
+#content,
+#header,
+.box,
+.google-search,
+.logo,
+.slider,
+.social-icon,
+.social-icon li {
+    display: inline-block
+}
+label span,
+legend span {
+    font-weight: 400;
+    font-size: 13px;
+    color: #444
+}
+.logo h1,
+th {
+    font-weight: 700
+}
+table caption {
+    padding: 0 0 5px;
+    width: auto;
+    text-align: right;
+    font-size: 12px
+}
+th {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 9px 12px;
+    border-width: 1px;
+    border-left: none;
+    border-top: none
+}
+td {
+    font-size: 13px;
+    padding: 5px 0;
+    border-width: 1px;
+    border-left: none;
+    border-top: none
+}
+body,
+html {
+    height: 100%
+}
+#container {
+    height: auto;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1000px
+}
+.red {
+    color: #C00
+}
+.bg-red {
+    background: #C00;
+    color: #fff
+}
+.clr {
+    clear: both;
+    margin-top: 10px
+}
+#header {
+    background: #fff;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -o-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 15px;
+    padding: 20px 15px;
+    width: 100%
+}
+.logo {
+    width: 300px
+}
+.logo a {
+    color: #444
+}
+.logo a:hover {
+    text-decoration: none;
+    color: #c00
+}
+.logo a:hover .red,
+.logo h1 {
+    color: #444
+}
+.logo h1 {
+    font-family: Ubuntu;
+    font-size: 35px;
+    margin-bottom: 0
+}
+.social-icon {
+    height: 39px;
+    line-height: 19px;
+    margin: 10px 0 0;
+    text-align: center;
+    width: 300px
+}
+.social-icon li iframe {
+    height: 35px;
+    vertical-align: text-top;
+    width: 90px
+}
+.google-search {
+    background: #efefef;
+    padding: 5px;
+    width: 356px
+}
+.google-search .txtbox {
+    background: url(../images/google_custom_search_watermark.gif) 5px 50% no-repeat #fff;
+    border: 1px solid #7e9db9;
+    float: left;
+    padding: 7px;
+    margin-bottom: 0;
+    width: 240px;
+    margin-right: 5px
+}
+#content,
+.google-search .txtbox:focus {
+    background: #fff
+}
+#content {
+    margin-top: 5px;
+    padding: 20px 10px;
+    width: 100%;
+    border-radius: 0
+}
+.slider {
+    margin-right: 9px;
+    width: 483px
+}
+.box {
+    border: 1px solid #c00;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 484px
+}
+.Colleges-in-India.box .content {
+    padding-bottom: 22px
+}
+.Courses-in-India.box,
+.Exams-in-India.box {
+    margin-left: 8px
+}
+.box .heading {
+    background: #c00;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    line-height: 24px;
+    padding: 5px 10px
+}
+.box .heading>img {
+    margin-right: 5px;
+    vertical-align: middle
+}
+.box .heading>a {
+    color: #fff;
+    font-family: ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px
+}
+.box ul li a,
+.carousel a,
+.footer-menu a,
+.most-search-queries a,
+.rating-text {
+    font-weight: 700
+}
+.box>ul {
+    padding: 8px
+}
+.box li,
+.default_box li {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 100%
+}
+.box li {
+    display: inline-table
+}
+.news.box ul li img {
+    float: left
+}
+.box ul li img {
+    border: 1px solid #ccc;
+    height: 72px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 72px
+}
+.box ul li a {
+    color: #c00;
+    vertical-align: middle;
+    text-decoration :underline;
+}
+.box ul li:last-child {
+    border: none;
+    margin-bottom: 0
+}
+.box .content {
+    background: #fff3d6;
+    padding: 12px
+}
+.box .content p {
+    margin: 0;
+    text-align: justify
+}
+#footer,
+.carousel li,
+.google-ad,
+.pagination li,
+.voting>p {
+    text-align: center
+}
+.box .content img {
+    float: left;
+    margin-right: 10px
+}
+.box .content>ul {
+    margin-top: 15px
+}
+.colleges-in-india li,
+.courses-in-india li,
+.exams-in-india li,
+.schools-in-india li {
+    border-bottom: medium none;
+    line-height: 20px;
+    padding-bottom: 0
+}
+.colleges-in-india.box,
+.schools-in-india.box {
+    margin-right: 8px;
+    width: 484px
+}
+.courses-in-india.box,
+.exams-in-india.box {
+    width: 484px
+}
+.round-arrow-bullet {
+    background: url(../images/bullets.png) left center no-repeat;
+    padding-left: 30px
+}
+.carousel>ul {
+    border: 1px solid #ccc;
+    padding: 5px
+}
+.universities {
+    margin-top: 25px
+}
+.carousel li {
+    display: inline-block;
+    width: 190px
+}
+.carousel>h2 {
+    background: #c00;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -o-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    font-family: ubuntu;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 5px 12px
+}
+#footer,
+.bread-cumb,
+.google-ad {
+    background: #fff
+}
+.social-icon>ul>li:nth-of-type(1) div {
+    vertical-align: middle!important
+}
+.google-ad,
+.google-ad>p,
+.voting>p {
+    vertical-align: middle
+}
+.carousel .image-dv {
+    border: 1px solid #ccc;
+    height: 80px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 80px;
+    display: table
+}
+.carousel .image-dv .image-dv-inner {
+    box-sizing: border-box;
+    display: table-cell;
+    height: 80px;
+    vertical-align: middle;
+    width: 80px;
+    max-width: 80px
+}
+.footer-menu li,
+.most-search-queries li {
+    display: inline-block
+}
+.institutes.carousel li,
+.schools.carousel li {
+    width: 158px
+}
+.carousel.institutes .image-dv {
+    height: 90px
+}
+.most-search-queries {
+    border: 1px solid #c00;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px 0 20px;
+    text-align: center
+}
+.most-search-queries>h2 {
+    border-bottom: 1px solid #ccc;
+    color: #c00;
+    font-family: ubuntu;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 5px
+}
+.most-search-queries li a {
+    border-right: 1px solid #ccc;
+    padding: 0 7px
+}
+.most-search-queries li:first-child {
+    padding-left: 0
+}
+.most-search-queries li:last-child a {
+    padding-right: 0;
+    border: none
+}
+#footer {
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-bottom-left-radius: 10px;
+    -o-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
+    -o-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 0 20px;
+    margin-bottom: 15px
+}
+.footer-menu {
+    margin: 0 auto;
+    width: 800px
+}
+.google-ad,
+.inner-page .box {
+    width: 100%
+}
+.footer-menu ul li:first-child a {
+    padding-left: 0
+}
+.footer-menu a {
+    border-right: 1px solid #ccc;
+    padding: 0 5px
+}
+.footer-menu ul li:last-child a {
+    border: none;
+    padding-right: 0
+}
+.copyright-text {
+    margin-top: 8px
+}
+.google-ad {
+    border: 1px solid #777;
+    display: table;
+    height: auto;
+    margin-top: 5px;
+    min-height: 40px
+}
+.google-ad.linkunitads {
+    display: table-cell;
+    height: 40px;
+    border: none
+}
+#footer .google-ad {
+    margin-top: 0
+}
+#footer .footer-divider {
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+.google-ad>p {
+    display: table-cell;
+    font-size: 25px;
+    line-height: 25px
+}
+.bread-cumb {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 8px
+}
+.bread-cumb li {
+    display: inline
+}
+.bread-cumb ul li a {
+    border-right: 1px solid #777;
+    margin-right: 4px;
+    padding-right: 6px
+}
+.box-content .search .college-location,
+.box-content .search .course-type,
+.box-content .search .school-location,
+.box-content .search .school-type {
+    display: inline-block;
+    margin-right: 10px;
+    width: 330px
+}
+.search {
+    display: block;
+    width: 100%
+}
+.box-content .search .search-btn {
+    display: inline-block;
+    width: 12%
+}
+.list li {
+    border-bottom: 0 none;
+    display: inline-table;
+    width: 33%
+}
+.left-side,
+.pagination li,
+.voting {
+    display: inline-block
+}
+.box-content .college-compare .course-type,
+.filter li {
+    width: 32%
+}
+.box-content {
+    padding: 10px
+}
+.box-content .searchc {
+    margin-bottom: 10px
+}
+.height-10 {
+    height: 10px
+}
+.box-content .college-compare {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px
+}
+.box-content .college-compare h2 {
+    font-size: 14px
+}
+.pagination li {
+    width: 19px
+}
+.pagination {
+    float: right;
+    width: auto;
+    margin-top: 5px
+}
+.pagelinks td {
+    padding: 5px 3px
+}
+.box .pagination a.active,
+.box .pagination a:hover {
+    background: #c00;
+    color: #fff;
+    padding: 3px;
+    text-decoration: none
+}
+.inner-page .box li {
+    border: none
+}
+.detail-list table tr td img,
+.detail-list ul li img {
+    float: left;
+    height: 110px;
+    max-height: 110px;
+    max-width: 110px;
+    width: 110px
+}
+.left-side {
+    width: 810px
+}
+.google-ad.square {
+    height: 200px;
+    width: 335px;
+    margin-top: 0
+}
+.voting {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 7px;
+    width: 100%
+}
+.voting>p {
+    display: table-cell;
+    font-size: 25px
+}
+.rating {
+    display: inline-block;
+    width: 475px
+}
+#score,
+.rating-text {
+    display: inline-table;
+    vertical-align: middle
+}
+.rating-text {
+    color: #444;
+    font-size: 13px;
+    margin-left: 12px
+}
+.social-share {
+    display: inline-block;
+    text-align: right;
+    width: 308px
+}
+.right-side {
+    display: inline-block;
+    float: right;
+    width: 160px
+}
+.google-ad.verticle {
+    height: 500px;
+    border: none
+}
+.voting .heading {
+    background: #c00;
+    padding: 5px
+}
+.voting .heading>h2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    vertical-align: middle
+}
+.voting .heading img {
+    display: inline-table;
+    margin-right: 5px
+}
+.select-option {
+    padding: 7px
+}
+.select-option li {
+    display: table;
+    height: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 100%
+}
+.voting .select-option td {
+    padding: 0;
+    text-align: center
+}
+.voting .select-option input {
+    float: left;
+    width: auto
+}
+.select-option input {
+    display: table-cell
+}
+.voting .select-option label {
+    float: left;
+    width: 70%
+}
+.select-option label {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 6px;
+    vertical-align: middle
+}
+.select-option img {
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    padding: 2px;
+    width: 70px
+}
+.select-option li:last-child {
+    border-top: 1px solid #ccc;
+    padding-top: 5px
+}
+.select-option tr:last-child {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px
+}
+.select-option tr {
+    display: table;
+    height: 100%;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 100%
+}
+.voting .select-option input[type=submit] {
+    display: inline-block;
+    float: left;
+    width: 100%
+}
+.next-vote {
+    background: #efefef;
+    display: inline-block;
+    margin-top: 6px;
+    padding: 5px 8px
+}
+.next-vote>p {
+    display: inline;
+    font-size: 15px;
+    line-height: 32px;
+    margin-right: 18px
+}
+.comment-box-tabs {
+    background: #ccc;
+    display: block;
+    padding: 25px
+}
+.comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-anchor {
+    background: linear-gradient(to bottom, #fff, #ddd) #ddd;
+    border-radius: 5px 0 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+    color: #444;
+    float: left;
+    font-family: Trebuchet MS;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 1em 3.5em;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .8)
+}
+.need-edu-loan a,
+.quiz-box>p,
+.related-dv .heading p {
+    font-family: ubuntu;
+    color: #fff
+}
+.comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor,
+.comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor:after {
+    background: #fff;
+    z-index: 3;
+    box-shadow: none
+}
+.comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-anchor:after {
+    background: linear-gradient(to bottom, #fff, #ddd) #ddd;
+    border-radius: 0 5px 0 0;
+    bottom: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+    content: "";
+    position: absolute;
+    right: -.5em;
+    top: 0;
+    transform: skew(10deg);
+    width: 1em;
+    z-index: 1
+}
+.comment-box-tabs .r-tabs .r-tabs-panel {
+    background: #fff;
+    border-radius: 0 5px 5px;
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    min-height: 240px;
+    padding: 2em;
+    position: relative;
+    z-index: 2;
+    margin-top: -1px
+}
+.comment-box-tabs .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+    display: block;
+    padding: 10px;
+    background-color: #00c5ad;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(0, 0, 0, .4);
+    font-size: 14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px
+}
+.comment-box-tabs .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+    background-color: #fff;
+    color: #00c5ad;
+    text-shadow: none
+}
+.comment-box-tabs .r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0
+}
+.comment-box-tabs .r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none
+}
+.comment-box-tabs .r-tabs .r-tabs-accordion-title,
+.comment-box-tabs .r-tabs .r-tabs-panel {
+    display: none
+}
+.comment-box-tabs .r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block
+}
+#details-page .box ul li,
+.col-1,
+.col-1 input,
+.col-1 label {
+    display: inline-block
+}
+@media only screen and (max-width: 767px) {
+    .select-option label {
+        line-height: 15px
+    }
+    .comment-box-tabs .r-tabs .r-tabs-nav .r-tabs-anchor {
+        padding: 8px;
+        font-size: 13px;
+        transform: none
+    }
+}
+.col-1 label,
+.col-2 label {
+    color: #444;
+    font-size: 15px
+}
+.col-1 {
+    margin-right: 10px;
+    width: 49%
+}
+.col-1>li,
+.col-2>li {
+    margin-bottom: 10px
+}
+.col-1 label {
+    vertical-align: middle;
+    width: 60px
+}
+.col-1 input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    vertical-align: middle;
+    width: 270px
+}
+.col-2 label {
+    margin-bottom: 5px
+}
+.col-2 textarea {
+    border-radius: 5px;
+    height: 95px;
+    margin-bottom: 10px;
+    overflow: hidden
+}
+#courses-in-india-page .filter-result .detail-list li:nth-of-type(2n) {
+    background: #eee
+}
+#courses-in-india-page .filter-result .detail-list .pagination li {
+    background: 0 0
+}
+#courses-in-india-page .filter-result .detail-list li {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+#courses-in-india-page .filter-result .detail-list li a {
+    line-height: 25px
+}
+#colleges-in-india-page .top-colleges-in-india .box-content .college-compare {
+    background: #fff
+}
+#inner-list-page .box .pagination li {
+    border: none;
+    box-shadow: none
+}
+#inner-list-page .box li {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px #aaa
+}
+#inner-list-page .box ul li img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px
+}
+#inner-list-page .box li:hover {
+    background: #EEE;
+    cursor: pointer
+}
+.quiz-box {
+    background: url(../images/logo_back.jpg) no-repeat rgba(0, 0, 0, 0);
+    height: 225px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: center;
+    width: 400px
+}
+.quiz-box>p {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px
+}
+#details-page .box ul li.college-logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 170px;
+    max-height: 170px
+}
+#details-page .box ul li.college-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 270px;
+    max-height: 150px
+}
+#details-page .box ul li.college-logo {
+    width: 180px
+}
+#details-page .box ul li.college-detail {
+    width: 300px;
+    margin-right: 10px
+}
+#details-page .social-share {
+    text-align: left
+}
+#details-page .box ul li.college-image {
+    width: 290px;
+    display: table-cell;
+    vertical-align: middle
+}
+#details-page .box ul.info {
+    display: table
+}
+#details-page .rating {
+    background: #efefef;
+    padding: 10px;
+    width: 100%
+}
+#details-page .rating ul li img {
+    border: none;
+    height: 100%;
+    margin-right: 0;
+    padding: 0;
+    width: auto
+}
+#details-page .box .rating ul li {
+    display: table-cell;
+    vertical-align: middle
+}
+#details-page .box .rating ul li:last-child,
+#details-page .box .rating ul li:nth-child(2) {
+    text-align: center;
+    width: 175px
+}
+#details-page .box .rating ul li:first-child {
+    width: 406px
+}
+#details-page .box .rating ul li a {
+    font-size: 16px
+}
+#details-page .box .rating ul {
+    display: table
+}
+#details-page .box .details-page-tab #photos ul li {
+    display: inline-block;
+    width: 250px
+}
+#details-page .box .details-page-tab #photos ul li img {
+    height: 100%;
+    width: 100%
+}
+#details-page .box .details-page-tab #videos ul li {
+    display: inline-block;
+    width: 375px
+}
+.need-edu-loan {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 45px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    text-align: center;
+    width: 400px
+}
+.need-edu-loan a {
+    background: #c00;
+    border-radius: 5px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%
+}
+.related-dv .heading p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px
+}
+.related-dv {
+    border: 1px solid #ccc;
+    border-radius: 11px
+}
+#details-list .related-dv {
+    margin-top: 10px
+}
+#details-list .related-dv ul li {
+    width: 33%;
+    display: inline-block
+}
+.related-dv>ul {
+    padding: 10px
+}
+.details-page-tab .r-tabs,
+.details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab {
+    position: relative
+}
+.details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab:last-child {
+    float: right
+}
+.details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab:last-child .r-tabs-anchor {
+    background: #3ba8cf;
+    border-radius: 0;
+    position: relative;
+    top: -1px
+}
+.details-page-tab .r-tabs .r-tabs-nav .r-tabs-tab:last-child .r-tabs-anchor:hover {
+    background: #C00;
+    cursor: pointer
+}
+.details-page-tab .r-tabs .r-tabs-nav .r-tabs-anchor {
+    background: #C00;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 8px;
+    text-decoration: none
+}
+.details-page-tab .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+    background-color: #ddd;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #444;
+    text-shadow: none
+}
+.details-page-tab .r-tabs .r-tabs-panel {
+    background-color: #F7F9FA;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: none
+}
+.details-page-tab .r-tabs .r-tabs-panel p {
+    color: #444;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: justify
+}
+.details-page-tab .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+    display: block;
+    padding: 10px;
+    background-color: #00c5ad;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(0, 0, 0, .4);
+    font-size: 14px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px
+}
+.details-page-tab .r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+    background-color: #fff;
+    color: #00c5ad;
+    text-shadow: none
+}
+.details-page-tab .r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0
+}
+.details-page-tab .r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0 0 0 -1px;
+    list-style: none;
+    width: auto;
+    padding-bottom: 0;
+    line-height: 22px
+}
+.details-page-tab .r-tabs .r-tabs-tab:first-child {
+    margin-left: 0
+}
+.details-page-tab .r-tabs .r-tabs-accordion-title {
+    display: none
+}
+.details-page-tab .r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block
+}
+@media (min-width: 768px) and (max-width: 980px) {
+    .details-page-tab .r-tabs .r-tabs-nav .r-tabs-anchor {
+        padding: 5px
+    }
+}
+@media only screen and (max-width: 767px) {
+    .details-page-tab .r-tabs .r-tabs-nav {
+        display: none
+    }
+    .details-page-tab .r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+        border-radius: 0
+    }
+    .details-page-tab .r-tabs .r-tabs-accordion-title {
+        display: block;
+        border: 1px solid #ccc;
+        margin-bottom: -1px
+    }
+}
+.details-page-tab {
+    display: inline-block;
+    width: 100%
+}
+.details-page-tab .tab-section {
+    margin: 0 0 2px;
+    display: block;
+    text-align: left
+}
+.details-page-tab .tab-section li {
+    display: inline-block;
+    float: left;
+    margin: 0 2px 0 0;
+    padding: 0;
+    width: auto
+}
+.details-page-tab .tab-section li a {
+    padding: 5px 6px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: block;
+    background: #c00;
+    color: #fff;
+    width: auto;
+    text-align: center;
+    border-radius: 7px 7px 0 0
+}
+.details-page-tab .tab-section li a.active,
+.details-page-tab .tab-section li a:hover {
+    background: #ddd;
+    color: #444;
+    text-decoration: none
+}
+.tab-section-inner-wrapper {
+    display: inline-block;
+    border: 1px solid #ddd;
+    width: 100%
+}
+.details-page-tab .tab-content-inner {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    padding: 15px;
+    text-align: left;
+    width: 100%
+}
+.details-page-tab .tab-content-inner.active {
+    display: block
+}
+.details-page-tab .tab-section li.college-compare-tab {
+    float: right
+}
+.details-page-tab .tab-section li.college-compare-tab a {
+    background: #3ba8cf;
+    border-radius: 0;
+    margin-top: -1px
+}
+.details-page-tab .tab-section li.college-compare-tab a:hover {
+    background: #c00;
+    color: #FFF
+}
+.details-page-tab .tab-content-inner h1 {
+    font-size: 18px;
+    margin-top: 0
+}
+#special-page .left-side {
+    display: inline-block;
+    width: 268px;
+    margin-right: 7px
+}
+#special-page .right-side {
+    display: inline-block;
+    float: none;
+    width: 700px
+}
+.reviews-logo {
+    background: url(../images/logo_back.jpg) no-repeat rgba(0, 0, 0, 0);
+    height: 225px;
+    padding: 10px;
+    text-align: center;
+    width: 100%
+}
+.reviews-logo>a {
+    display: block;
+    width: 100%
+}
+.reviews-logo span {
+    color: #fff;
+    display: block;
+    font-family: ubuntu;
+    font-size: 35px;
+    line-height: 40px
+}
+#special-page .box .heading p {
+    color: #fff;
+    font-family: ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px
+}
+#special-page .box .box-content p {
+    color: #3BA8CF;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center
+}
+.review-details {
+    display: table;
+    padding: 0 25px;
+    width: 100%
+}
+.review-details>span:first-child {
+    display: table-cell;
+    font-size: 13px;
+    font-weight: 700;
+    vertical-align: middle;
+    width: 143px
+}
+.review-details>span:last-child {
+    display: inline-table;
+    width: 300px
+}
+.review-details input {
+    display: inline-block;
+    float: left
+}
+#special-page .box label {
+    display: table-cell;
+    float: left;
+    font-size: 13px;
+    line-height: 20px
+}
+#special-page .rating {
+    width: 100%
+}
+.box .sub-heading {
+    background: #3ba8cf;
+    border-radius: 0;
+    color: #fff;
+    font-family: ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 5px 10px
+}
+#special-page .box .rating p.sub-title {
+    color: #c00;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px 0;
+    text-align: left
+}
+.rating-inner-dv {
+    border: 1px solid #ccc;
+    padding: 8px
+}
+#special-page .rating-inner-dv .col-1 {
+    color: #000;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-right: 0;
+    vertical-align: middle;
+    width: 25%
+}
+#special-page .rating-inner-dv .col-2 {
+    display: inline-block;
+    width: 74%
+}
+.captcha-code {
+    border: 1px solid #ccc;
+    padding: 15px
+}
+#special-page .captcha-code>p {
+    color: #777;
+    font-weight: 400
+}
+body.special-page-bg {
+    background: url(../images/review-page-bg.jpg) 0 0/100% auto repeat-y #fff
+}
+.Tips {
+    background: #3ba8cf;
+    padding: 10px 15px 10px 30px
+}
+.Tips li {
+    color: #fff;
+    font-size: 15px;
+    font-family: ubuntu;
+    line-height: 24px;
+    list-style-position: outside;
+    list-style-type: disc
+}
+.personal-details {
+    border: 1px solid #ccc;
+    padding: 15px
+}
+.personal-details .col-1 {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 24%
+}
+.col-2 {
+    display: inline-block;
+    width: 49%
+}
+.comment-dv,
+.req-edu-loan {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 100%;
+    display: inline-block
+}
+#special-page .box .box-content .req-edu-loan>p {
+    color: #444;
+    float: left;
+    font-size: 13px
+}
+.req-edu-loan input {
+    float: left;
+    margin-right: 8px
+}
+.personal-details .day,
+.personal-details .month {
+    display: inline-block;
+    width: 32%
+}
+.personal-details .year {
+    display: inline-block;
+    width: 33%
+}
+.EmptyStarCss,
+.FilledStarCss,
+.StarCss {
+    height: 32px;
+    width: 32px
+}
+.Ratingleft {
+    float: left;
+    padding-right: 10px
+}
+.FilledStarCss {
+    background-image: url(../images/filledstar.png)
+}
+.EmptyStarCss {
+    background-image: url(../images/star.png)
+}
+.reveal-modal {
+    width: 100%
+}
+.reveal-modal .btn_Compete {
+    border: 1px solid #a1a1a1;
+    box-shadow: none;
+    font-size: 13px;
+    margin-bottom: 5px;
+    width: 100%
+}
+.pagelinks span {
+    background-color: #c00;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 3px 7px
+}
+.college-compare-result-dv ul li:nth-of-type(2n+1),
+.college-compare-result-dv ul li:nth-of-type(2n+1) .fourth-cols {
+    background: #efefef
+}
+#compare-result-page .box-content {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    padding: 5px
+}
+#compare-result-page .box .heading>p {
+    color: #fff;
+    font-family: ubuntu;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px
+}
+.college-compare-result-dv {
+    display: inline-block;
+    float: left;
+    width: 100%
+}
+.college-compare-result-dv ul li {
+    display: table;
+    float: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%
+}
+.college-compare-result-dv ul li .fourth-cols {
+    border-right: 3px solid #fff;
+    display: table-cell;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center
+}
+.college-compare-result-dv ul li .first.fourth-cols {
+    font-size: 16px;
+    font-weight: 700;
+    width: 22%
+}
+.college-compare-result-dv ul li .fourth.fourth-cols,
+.college-compare-result-dv ul li .second.fourth-cols,
+.college-compare-result-dv ul li .third.fourth-cols {
+    width: 26%
+}
+.college-compare-result-dv ul li.fifth-row .fourth.fourth-cols p,
+.college-compare-result-dv ul li.fifth-row .second.fourth-cols p,
+.college-compare-result-dv ul li.fifth-row .third.fourth-cols p {
+    text-align: justify
+}
+.college-compare-result-dv ul li.third-row .fourth.fourth-cols,
+.college-compare-result-dv ul li.third-row .second.fourth-cols,
+.college-compare-result-dv ul li.third-row .third.fourth-cols {
+    text-align: left
+}
+.college-compare-result-dv ul li.first-row .fourth-cols img {
+    margin-right: 0
+}
+#pnllist>ul>span {
+    float: right
+}
+div.full .jquery-auto-geocoder-map {
+    width: 390px
+}
+
+
+#grd_Jobs ul, #grd_papers ul {
+    float: left;
+    width: 100%;
+}
+#grd_Jobs ul li, #grd_papers ul li {
+    float: left;
+    width: 50%;
+    padding: 10px 0 0;
+    display: block;
+}
+#grd_Jobs ul li img, #grd_papers ul li img {
+    display: inline-block;
+    height: auto;
+    width: auto;
+}
+#grd_Jobs .jobs_info, #grd_papers .jobs_info {
+    display: inline-block;
+    width: 85%;
+}
+.jobs_info > span {
+    display: block;
+    padding-top: 10px;
+}
+.jobs_location {
+    padding-left: 0;
+    width: 100%;
+}
+.jobs_location > span.course_city {
+    display: block;
+    padding-bottom: 10px;
+}

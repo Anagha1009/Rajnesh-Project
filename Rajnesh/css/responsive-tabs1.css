@@ -1,0 +1,142 @@
+﻿/* Responsive Tabs - menucool.com/jquery-tabs */
+
+ul.rtabs
+{
+    text-align:left; /*set to left, center, or right to align the tabs as desired*/    
+    font-size:0;
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+        
+ul.rtabs li {
+    display: inline;
+    line-height: 22px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    width: 100%;
+}
+#details-page ul.rtabs li {
+    display: inline;
+}        
+ul.rtabs li a {
+    background-color: #cc0000;
+    border-radius: 7px 7px 0 0;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    outline: medium none;
+    padding: 5px 8px;
+    position: relative;
+    text-decoration: none;
+}
+ul.rtabs li.compare-college-tab a {
+    background: none repeat scroll 0 0 #3ba8cf;
+    border-radius: 0;
+    bottom: 1px;
+    float: right;
+    position: relative;
+}
+ul.rtabs li.compare-college-tab a:hover {
+    background:#cc0000;
+    color:#fff;   
+}
+ul.rtabs li a:link, ul.rtabs li a:visited
+{
+    color:#fff;
+}
+        
+ul.rtabs li a:hover
+{
+    background-color:#ddd;
+    color: #444;
+}
+  
+/*selected tab style */
+ul.rtabs li.selected a {
+    background: none repeat scroll 0 0 #ddd;
+    color: #444;
+    font-weight: normal;
+    z-index: 3;
+    font-weight: bold;
+}   
+        
+/*selected tab style on hover */
+ul.rtabs li.selected a:hover
+{
+    text-decoration:none;
+}
+
+/* container of content panels */
+div.panel-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    position: relative;
+}
+
+/* content panel */       
+div.panel-container > div
+{
+    padding:30px 26px;
+    
+    /* The two settings below should not be changed. */
+    display: block;
+    margin:0px;
+}  
+div.panel-container div.inactive
+{
+    display: none;
+}
+
+/* loading image before ajax content is retrieved. Only applicable when Ajax is used.*/
+div.ajaxLoading {background:transparent url(loading.gif) no-repeat center center; height:150px; width:20px; font-size:0;padding:0; margin:0 auto; }
+
+
+/* For mobiles */
+@media only screen and (max-width:560px){
+    ul.rtabs{
+        box-sizing:border-box;
+        border-left:1px solid #ccc;
+        border-top:1px solid #ccc;
+        min-width:260px;
+    }
+
+    ul.rtabs li{
+        display:inline-block;
+        box-sizing:border-box;
+        margin-right:0;
+        width:50%; /* set it to 100% for one column, 33.33% for three-column */
+    }
+
+    ul.rtabs li:last-child:nth-child(odd){
+        width:100%;
+    }
+
+    ul.rtabs li a {
+        border:none;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        display:block;
+        padding:0;
+        text-align:center;
+        border-radius:0;
+    }
+
+    ul.rtabs li.selected a {
+        background-color:#fff;
+        background-image: linear-gradient(#fff, #fff 50%, #f4f4f4 50%, #fafafa);
+    }
+
+    div.panel-container {
+        border-radius:0;
+        min-width:260px;
+        box-sizing:border-box;
+    }
+}
+

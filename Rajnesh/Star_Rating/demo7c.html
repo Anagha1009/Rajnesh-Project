@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+    <title>Star Rating widget Demo7 Page</title>
+    <!-- Demo page css -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/demos.css?b38" />
+    <style type="text/css">
+        .caption
+        {
+            padding: 2px 0 0 .5em;
+            float: left;
+            line-height: 1em;
+        }
+    </style>
+    <!-- Uni-Form style sheet -->
+    <style type="text/css" media="screen">
+        @import "css/uni-form.css?b38";
+    </style>
+    <!--[if lte ie 7]>
+	<style type="text/css" media="screen">
+		.uniForm, .uniForm fieldset, .uniForm .ctrlHolder, .uniForm .formHint, .uniForm .buttonHolder, .uniForm .ctrlHolder .multiField, .uniForm .inlineLabel{ zoom:1; }
+		.uniForm .inlineLabels label, .uniForm .inlineLabels .label, .uniForm .blockLabels label, .uniForm .blockLabels .label, .uniForm .inlineLabel span{ padding-bottom: .2em; }
+		.uniForm .inlineLabel input, .uniForm .inlineLabels .inlineLabel input, .uniForm .blockLabels .inlineLabel input{ margin-top: -.3em; }
+	</style>
+	<![endif]-->
+    <!-- Demo page js -->
+    <script type="text/javascript" src="js/jquery.min.js?v=1.4.2"></script>
+    <script type="text/javascript" src="js/jquery-ui.custom.min.js?v=1.8"></script>
+    <script type="text/javascript" src="js/jquery.uni-form.js?v=1.3"></script>
+    <!-- Star Rating widget stuff here... -->
+    <script type="text/javascript" src="js/jquery.ui.stars.js?v=3.0.0b38"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.ui.stars.css?v=3.0.0b38" />
+    <script type="text/javascript">
+        $(function () {
+
+            var $caption, $cap = $("<span/>").addClass("caption");
+
+            // Hide all elements (it's possible to create Stars from hidden elements too)
+            $(".multiField").children().hide();
+
+            // Poll-6
+            $caption = $cap.clone();
+            $("#example-6")
+				.stars({
+				    inputType: "select",
+				    cancelValue: 999,
+				    cancelShow: false,
+				    captionEl: $caption
+				})
+				.append($caption);
+        });
+	</script>
+</head>
+<body>
+    <div class="ctrlHolder">
+        <div class="multiField" id="example-6">
+            <p class="blockLabel">
+                <select name="poll-6">
+                    <option value="999">Rate this:</option>
+                    <option value="1">Poor</option>
+                    <option value="2">Average</option>
+                    <option value="3">Good</option>
+                    <option value="3">Nice</option>
+                    <option value="3">Excellent</option>
+                </select>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* ---------------------------------- slider_boxs ----------------------------------------------*/
+
+.slider_box 
+{
+	font-family:"Trebuchet MS", Helvetica, Garuda, sans-serif;
+	font-size:13px;
+	color:#444;
+	float:left;
+	position:relative;
+	overflow:hidden;
+	padding:11px;
+	-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+width:461px;
+min-height:260px;
+}
+
+.Content_sliderBox {
+	position:relative;
+	overflow:hidden;
+}
+
+.Content_sliderBox ul.content_slider_slides {
+	list-style:none;
+	padding:0;
+	margin:0;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.Content_sliderBox ul.content_slider_slides li {
+	display:none;
+	width:461px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.content_slider ul.content_slider_pager {
+	list-style:none;
+	padding:12px 0 0;
+	margin:0;
+	position:relative;
+	overflow:hidden;
+}
+
+.content_slider ul.content_slider_pager li {
+	float:left;
+	padding:0 4px 0 0;
+	margin:0;
+}
+
+.content_slider ul.content_slider_pager li a {
+	background:url(../images/slider.png) 0 0 no-repeat;
+	display:block;
+	width:17px;
+	height:17px;
+	text-indent:-9999px;
+	visibility:hidden;
+}
+
+.content_slider ul.content_slider_pager li a:hover, .content_slider ul.content_slider_pager li.current a {background:url(../images/slider_sel.png) 0 0 no-repeat;}
+
+.slider_box_custom_comments_entries span.trans {
+	font-size:.85em;
+	line-height:1.65em;
+}
+
+.slider_box_links li {
+	background:url(../images/sidebar_bg_dotted.png) top left repeat-x;
+	padding:0;
+}
+
+.slider_box h1
+{
+    color: #FF6100;
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+}
+
+.slider_box h2
+{
+    color: #FF6100;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0;
+    padding: 0px 0px 10px 0px;
+}
+
+.Content_sliderBox img
+{
+    width:461px;
+    height:241px;
+}
+
+.leftBox
+{
+    width:100%;
+    text-align:left;
+    vertical-align:top;
+    padding-bottom:5px;
+}
+
+h2
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1em;
+    padding: 7px;
+    margin: 0;
+}
+
+h2 a
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: normal;
+}

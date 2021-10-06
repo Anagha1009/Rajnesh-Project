@@ -1,0 +1,44 @@
+CREATE PROCEDURE [dbo].[GetFeaturedCategory]
+	AS
+BEGIN
+SET NOCOUNT ON;
+	SELECT 
+			Category_ID,
+			Category_Title,	
+			Category_Desc,
+			Category_MetaTitle,
+			Category_MetaDesc,
+			Category_MetaKeys,
+			Category_Featured,
+			Category_Photo,
+			"Category_Thumbnail"= dbo.GetPhoto(Category_ID,Category_Photo)
+			
+	FROM tbl_Category	
+	
+END
+
+
+/+++++++++++++++++++++++++++++++++++++++++++++++++/
+
+
+CREATE FUNCTION GetPhoto
+( 
+ @CategoryId int ,
+ @CategoryPhoto varchar(250)
+)
+RETURNS varchar(250)
+   As
+    BEGIN 
+    declare @Photo varchar(250)
+         
+         IF EXISTS(SELECT TOP 1 SubCategory_CategoryID FROM tbl_SubCategory WHERE SubCategory_CategoryID=@CategoryId)
+			BEGIN			  
+				SET @Photo = (select TOP 1 SubCategory_Photo FROM tbl_SubCategory WHERE SubCategory_CategoryID=2)
+			END	
+		ELSE
+			Begin
+				SET @Photo = @CategoryPhoto
+			End
+           return @Photo
+    END
+

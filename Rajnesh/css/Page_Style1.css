@@ -1,0 +1,386 @@
+﻿body	 
+{
+    font-family:Trebuchet MS;
+    font-size:13px;
+    color:#444;
+    background:url(../images/bck_1.jpg) center center no-repeat; 
+    background-position:fixed; 
+    background-attachment: fixed;
+}
+
+
+/*---------Box 0 Starts---------*/
+
+.Box_0
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_0 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    padding:5px 0px 5px 10px;
+    background-color:#0397FA;
+}
+
+.Box_0 .Details_Box
+{
+    background-color:#B8DFFA;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 0 Ends---------*/
+
+/*---------Box 1 Starts---------*/
+
+.Box_1
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_1 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    padding:5px 0px 5px 10px;
+    background-color:#003063;
+}
+
+.Box_1 .Details_Box
+{
+    background-color:#efefef;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 1 Ends---------*/
+
+/*---------Box 2 Starts---------*/
+
+.Box_2
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_2 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    padding:5px 0px 5px 10px;
+    background-color:#2981B3;
+}
+
+.Box_2 .Details_Box
+{
+    background-color:#efefef;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 2 Ends---------*/
+
+
+/*---------Box 3 Starts---------*/
+
+.Box_3
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_3 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    padding:5px 0px 5px 10px;
+    background-color:#C6401A;
+}
+
+.Box_3 .Details_Box
+{
+    background-color:#FFF3D6;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 3 Ends---------*/
+
+
+/*---------Box 4 Starts---------*/
+
+.Box_4
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_4 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    padding:5px 0px 5px 10px;
+    background-color:#FFAD1F;
+}
+
+.Box_4 .Details_Box
+{
+    background-color:#FDDDA6;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 4 Ends---------*/
+
+
+/*---------Box 5 Starts---------*/
+
+.Box_5
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_5 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    padding:5px 0px 5px 10px;
+    text-decoration:none;
+    background-color:#98EBB5;
+}
+
+.Box_5 .Details_Box
+{
+    background-color:#DBFBE6;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 5 Ends---------*/
+
+
+/*---------Box 6 Starts---------*/
+
+.Box_6
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_6 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    padding:5px 0px 5px 10px;
+    background-color:#9EBF64;
+}
+
+.Box_6 .Details_Box
+{
+    background-color:#E9FACB;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 6 Ends---------*/
+
+
+/*---------Box 7 Starts---------*/
+
+.Box_7
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_7 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    padding:5px 0px 5px 10px;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    background-color:#8187FC;
+}
+
+.Box_7 .Details_Box
+{
+    background-color:#DFE0FC;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 7 Ends---------*/
+
+
+
+/*---------Box 8 Starts---------*/
+
+.Box_8
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_8 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    padding:5px 0px 5px 10px;
+    text-decoration:none;
+    background-color:#FA39C0;
+}
+
+.Box_8 .Details_Box
+{
+    background-color:#FADCF1;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 8 Ends---------*/
+
+
+
+/*---------Box 9 Starts---------*/
+
+.Box_9
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_9 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #010101;
+    padding:5px 0px 5px 10px;
+    text-decoration:none;
+    background-color:#CC0000;
+}
+
+.Box_9 .Details_Box
+{
+    background-color:#FFF3D6;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 9 Ends---------*/
+
+
+/*---------Box 10 Starts---------*/
+
+.Box_10
+{
+    width:240px;
+    float:left;
+    margin:0px 10px 10px 0px;
+}
+
+.Box_10 .Title_Box 
+{
+    font-family:"Trebuchet MS",Helvetica,Garuda,sans-serif;
+    font-size:19px;
+    color: #FEFEFE !important;
+    font-weight: normal;
+    padding:5px 0px 5px 10px;
+    text-shadow: 1px 1px 1px #010101;
+    text-decoration:none;
+    background-color:#41FCFC;
+}
+
+.Box_10 .Details_Box
+{
+    background-color:#ACFDFD;
+    padding:5px;
+    height:180px;
+}
+
+/*---------Box 10 Ends---------*/
+
+.Title_Box img
+{
+    float:left;
+    height:25px;
+    margin-right:10px;
+}
+
+.Details_Box
+{
+    -webkit-border-bottom-right-radius: 7px;
+-webkit-border-bottom-left-radius: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-bottomleft: 7px;
+border-bottom-right-radius: 7px;
+border-bottom-left-radius: 7px;
+}
+
+.links
+{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+}
+
+.links li a
+{
+    color:#cc0000;
+    text-decoration:none;
+}
+
+.links li a:hover
+{
+    color:#cc0000;
+    text-decoration:underline;
+}
