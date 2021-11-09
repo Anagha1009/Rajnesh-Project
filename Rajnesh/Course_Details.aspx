@@ -16,9 +16,9 @@
     <%--<script src="https://www.eduvidya.com/js/star/star_rating_Univ.js" type="text/javascript"></script>--%>
 
 
-    <script src="js/star/jquery.js" type="text/javascript"></script>
-    <script src="js/star/jquery.rating.js" type="text/javascript"></script>
-    <script src="js/star/star_rating_Univ.js" type="text/javascript"></script>
+    <script src="/js/star/jquery.js" type="text/javascript"></script>
+    <script src="/js/star/jquery.rating.js" type="text/javascript"></script>
+    <script src="/js/star/star_rating_Univ.js" type="text/javascript"></script>
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cp_left" runat="Server">

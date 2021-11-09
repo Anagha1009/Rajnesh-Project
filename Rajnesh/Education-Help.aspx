@@ -17,19 +17,19 @@
         }
     </script>
 
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
-    <link href="css/menu.css" rel="stylesheet" />
-    <link href="css/jquery.raty.css" rel="stylesheet" />
-    <script type="text/javascript"  src="js/ckeditor.js"></script>
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/responsive.css" rel="stylesheet" />
+    <link href="/css/menu.css" rel="stylesheet" />
+    <link href="/css/jquery.raty.css" rel="stylesheet" />
+    <script type="text/javascript"  src="/js/ckeditor.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
     <%--<script type="text/javascript" src="https://cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>--%>
     <%--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>--%>
-    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
     <%--<script type="text/javascript" src="js/jquery.raty.js"></script>--%>
-    <script type="text/javascript" src="js/jquery.responsiveTabs.js"></script>
-    <script type="text/javascript" src="js/labs.js"></script>
+    <script type="text/javascript" src="/js/jquery.responsiveTabs.js"></script>
+    <script type="text/javascript" src="/js/labs.js"></script>
 
 
 
@@ -59,7 +59,7 @@
         });
     </script>
     <script type="text/javascript">var switchTo5x = true;</script>
-    <script type="text/javascript" src="js/button.js"></script>
+    <script type="text/javascript" src="/js/button.js"></script>
     <%--<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>--%>
     <script type="text/javascript">stLight.options({ publisher: "00d73c38-2d89-490c-996c-49ed57221ea3", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
     <%-- <script>

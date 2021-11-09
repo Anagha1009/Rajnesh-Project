@@ -59,7 +59,7 @@
                     </form>
                    <%-- <script type="text/javascript" src="https://www.google.co.in/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>--%>
 
-                    <script type="text/javascript" src="js/brandjs.js"></script>
+                    <script type="text/javascript" src="/js/brandjs.js"></script>
                 </div>
                  </div>
                  
@@ -304,10 +304,10 @@
 
 
     <%--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>--%>
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/js/menu.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
@@ -336,6 +336,6 @@
                                                                     el[i].style.fontFamily = "Ubuntu";
 </script>
 <%--<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" async></scrip--%>t>
-    <script type="text/javascript" src="js/webfont.js"></script>
+    <script type="text/javascript" src="/js/webfont.js"></script>
 </body>
 </html>

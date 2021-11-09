@@ -8,8 +8,8 @@
     <asp:Literal ID="ltl_metaKeys" runat="server"></asp:Literal>
     <%--<link href="https://www.eduvidya.com/Google_Code/screen.css" rel="stylesheet" type="text/css" />
     <script src="https://www.eduvidya.com/JW_Player/jwplayer.js" type="text/javascript"></script>--%>
-    <link href="css/screen.css" rel="stylesheet" />
-    <script src="JW_Player/jwplayer.js" type="text/javascript"></script>
+    <link href="/css/screen.css" rel="stylesheet" />
+    <script src="/JW_Player/jwplayer.js" type="text/javascript"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cp_left" runat="Server">
     <asp:ScriptManager ID="scrManager" runat="server">
@@ -77,7 +77,7 @@
             </div>
             <div>
                 <script type="text/javascript">                        var switchTo5x = true;</script>
-                <script type="text/javascript" src="js/button.js"></script>
+                <script type="text/javascript" src="/js/button.js"></script>
                 <%--<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>--%>
                 <script type="text/javascript">                        stLight.options({ publisher: "48258661-ca69-42d4-831c-4dc41b9328a1" });</script>
                 <span class='st_googleplus_large' displaytext='Google +'></span><span class='st_facebook_large'

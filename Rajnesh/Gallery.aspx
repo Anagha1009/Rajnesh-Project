@@ -5,7 +5,7 @@
     <asp:Literal ID="ltl_MetaTitle" runat="server"></asp:Literal>
     <asp:Literal ID="ltl_MetaDesc" runat="server"></asp:Literal>
     <asp:Literal ID="ltl_MetaKeys" runat="server"></asp:Literal>
-    <link href="css/gallery.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/gallery.css" rel="stylesheet" type="text/css"/>
     <%--<link href="https://www.eduvidya.com/Gallery.css" rel="stylesheet" type="text/css" />--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cp_left" runat="Server">

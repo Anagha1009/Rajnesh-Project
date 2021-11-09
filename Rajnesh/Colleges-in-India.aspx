@@ -4,6 +4,7 @@
 <%@ Register Src="UserControls/Competition.ascx" TagName="Competition" TagPrefix="asp" %>
 <%@ Register Assembly="CollectionPager" Namespace="SiteUtils" TagPrefix="Pager" %>
 <%@ Register Src="UserControls/CompareBox.ascx" TagName="CompareBox" TagPrefix="asp" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Top Colleges in India 2021 list for MBA, Engineering, Medical, Law</title>
     <meta name="Description" content="Get List of Top Colleges in India 2021 for MBA, Engineering, Medical, Commerce and Law" />
@@ -39,7 +40,7 @@
                         ID="ToolkitScriptManager1" runat="server">
                     </asp:ToolkitScriptManager>
                     <div class="Ratingleft">
-                        <asp:Rating ID="rt_Rate" runat="server" StarCssClass="StarCss" FilledStarCssClass="FilledStarCss" EmptyStarCssClass="EmptyStarCss"
+                        <asp:Rating ID="rt_Rate" href="rt_Rate_Changed" runat="server" StarCssClass="StarCss" FilledStarCssClass="FilledStarCss" EmptyStarCssClass="EmptyStarCss"
                             WaitingStarCssClass="WaitingStarCss" AutoPostBack="true"
                             OnChanged="rt_Rate_Changed" MaxRating="5">
                         </asp:Rating>
@@ -54,7 +55,7 @@
                 <script type="text/javascript">
 
                     var switchTo5x = true;</script>
-                <script src="js/button.js" type="text/javascript"></script>
+                <script src="/js/button.js" type="text/javascript"></script>
                <%-- <script type="text/javascript"
                     src="https://w.sharethis.com/button/buttons.js"></script>--%>
                 <script type="text/javascript">

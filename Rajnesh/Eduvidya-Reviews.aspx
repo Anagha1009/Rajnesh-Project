@@ -22,8 +22,8 @@
     <link href="/css/menu.css" rel="stylesheet" />
     <link href="/css/jquery.raty.css" rel="stylesheet" />
     
-    <link href="css/reveal.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript"  src="js/ckeditor.js"></script>
+    <link href="/css/reveal.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript"  src="/js/ckeditor.js"></script>
 
     <%--<link href="https://www.eduvidya.com/CommentBox/css/reveal.css" rel="stylesheet" type="text/css" />--%>
     <%--<script src="https://www.eduvidya.com/ckeditor/ckeditor.js" type="text/javascript"></script>--%>
@@ -55,13 +55,13 @@
             border-radius: 5px;
         }</style>--%>
     <%--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>--%>
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="/js/jquery.bxslider.js"></script>
     <script type="text/javascript" src="/js/menu.js"></script>
     <script type="text/javascript" src="/js/jquery.raty.js"></script>
     <script type="text/javascript" src="/js/jquery.responsiveTabs.js"></script>
     <script type="text/javascript" src="/js/labs.js"></script>
-    <script type="text/javascript" src="js/jquery.reveal.js"></script>
+    <script type="text/javascript" src="/js/jquery.reveal.js"></script>
     <%--<script src="https://www.eduvidya.com/CommentBox/js/jquery.reveal.js" type="text/javascript"></script>--%>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -84,7 +84,7 @@
         });
     </script>
     <script type="text/javascript">var switchTo5x = true;</script>
-    <script type="text/javascript" src="js/button.js"></script>
+    <script type="text/javascript" src="/js/button.js"></script>
     <%--<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>--%>
     <script type="text/javascript">stLight.options({ publisher: "00d73c38-2d89-490c-996c-49ed57221ea3", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
     <script type="text/javascript">

@@ -9,7 +9,7 @@
 <asp:Content ID="Content2" runat="server" ContentPlaceHolderID="cp_bottomHead">
     <%--<script type="text/javascript" src="https://www.eduvidya.com/lib/jquery-1.10.1.min.js"></script>--%>
 
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+   <%-- <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>--%>
     <script type="text/javascript" src="https://www.eduvidya.com/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
     <script type="text/javascript" src="https://www.eduvidya.com/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
     <link rel="stylesheet" type="text/css" href="https://www.eduvidya.com/fancybox/source/jquery.fancybox.css?v=2.1.5"
@@ -68,7 +68,7 @@
 
             <div class="social-share">
                 <script type="text/javascript">                        var switchTo5x = true;</script>
-                <script type="text/javascript" src="js/button.js"></script>
+                <script type="text/javascript" src="/js/button.js"></script>
                 <%--<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>--%>
                 <script type="text/javascript">                        stLight.options({ publisher: "48258661-ca69-42d4-831c-4dc41b9328a1" });</script>
                 <span class='st_googleplus_large' displaytext='Google +'></span><span class='st_facebook_large'

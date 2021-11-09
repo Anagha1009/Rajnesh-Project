@@ -11,9 +11,9 @@
     <link href="https://www.eduvidya.com/CommentBox/css/reveal.css" rel="stylesheet" type="text/css" />
     <script src="https://www.eduvidya.com/CommentBox/js/jquery.reveal.js" type="text/javascript"></script>--%>
 
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <link href="css/reveal.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="js/jquery.reveal.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+    <link href="/css/reveal.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/js/jquery.reveal.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css' />
     <script type="text/javascript">
         function isNumberKey(evt) {

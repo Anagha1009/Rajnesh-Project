@@ -237,17 +237,25 @@ public partial class admin_Institutes : System.Web.UI.Page
             objInstitute.strAdmissions = txtAdmissions.Text;
             objInstitute.strFacilities = txtFacility.Text;
             objInstitute.strWebsite = txtWebsite.Text;
-            
+
+            string strResponse = "";
             if (fu_Image.HasFile)
             {
                 cls_common objCFC = new cls_common();
                 string strRanFileName = objCFC.file_name(fu_Image.FileName);
-                string strDocPath = Server.MapPath("~/admin/Upload/Institutes/" + strRanFileName);
-                fu_Image.SaveAs(strDocPath);
-                objInstitute.strPhoto = strRanFileName;
+                decimal size = Math.Round(((decimal)fu_Image.PostedFile.ContentLength / (decimal)1024), 2);
+                if (size < 500)
+                {
+                    string strDocPath = Server.MapPath("~/admin/Upload/Institutes/" + strRanFileName);
+                    fu_Image.SaveAs(strDocPath);
+                    objInstitute.strPhoto = strRanFileName;
+                    strResponse = objInstitute.fn_saveInstitute();
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Your file size should be less than 500kb')", true);
+                }                
             }
-            
-            string strResponse = objInstitute.fn_saveInstitute();
 
             if (strResponse.StartsWith("SUCCESS"))
             {
@@ -313,6 +321,7 @@ public partial class admin_Institutes : System.Web.UI.Page
             objInstitute.strFacilities = txtFacility.Text;
             objInstitute.strWebsite = txtWebsite.Text;
 
+            string strResponse = "";
             if (fu_Image.HasFile)
             {
                 InstituteClass oInstituteImages = new InstituteClass();
@@ -328,16 +337,23 @@ public partial class admin_Institutes : System.Web.UI.Page
 
                 cls_common objCFC = new cls_common();
                 string strRanFileName = objCFC.file_name(fu_Image.FileName);
-                string strDocPath = Server.MapPath("~/admin/Upload/Institutes/" + strRanFileName);
-                fu_Image.SaveAs(strDocPath);
-                objInstitute.strPhoto = strRanFileName;
+                decimal size = Math.Round(((decimal)fu_Image.PostedFile.ContentLength / (decimal)1024), 2);
+                if (size < 500)
+                {
+                    string strDocPath = Server.MapPath("~/admin/Upload/Institutes/" + strRanFileName);
+                    fu_Image.SaveAs(strDocPath);
+                    objInstitute.strPhoto = strRanFileName;
+                    strResponse = objInstitute.fn_editInstitute();
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Your file size should be less than 500kb')", true);
+                }
             }
             else
             {
                 objInstitute.strPhoto = hfImage.Value;
             }
-
-            string strResponse = objInstitute.fn_editInstitute();
 
             if (strResponse.StartsWith("SUCCESS"))
             {

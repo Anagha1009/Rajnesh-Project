@@ -12,7 +12,7 @@
     <asp:Literal ID="ltl_metaKeys" runat="server"></asp:Literal>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cp_bottomHead" runat="Server">
-    <script type="text/javascript" src="js/latest.js"></script>
+    <script type="text/javascript" src="/js/latest.js"></script>
     <%--<script src="https://www.eduvidya.com/js/jquery.cycle.all.latest.js" type="text/javascript"></script>--%>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -47,7 +47,7 @@
 
                     <div class="social-share">
                         <script type="text/javascript">                                    var switchTo5x = true;</script>
-                        <script type="text/javascript" src="js/button.js"></script>
+                        <script type="text/javascript" src="/js/button.js"></script>
                         <%--<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>--%>
                         <script type="text/javascript">                                    stLight.options({ publisher: "48258661-ca69-42d4-831c-4dc41b9328a1" });</script>
                         <span class='st_googleplus_large' displaytext='Google +'></span><span class='st_facebook_large'
@@ -223,7 +223,7 @@
         </div>
     </div>
     <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-    <script type="text/javascript" src="js/auto-geocoder.js"></script>
+    <script type="text/javascript" src="/js/auto-geocoder.js"></script>
     <%--<script src="https://www.eduvidya.com/Google_Code/jquery.auto-geocoder.js" type="text/javascript"></script>--%>
     <script type="text/javascript">
         $(function () {
